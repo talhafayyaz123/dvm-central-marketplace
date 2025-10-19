@@ -6,7 +6,7 @@ A multi-vendor platform to buy and sell veterinary supplies, educational resourc
 
 ## Overview
 
-DVM Central is a leading online marketplace designed specifically for veterinary professionals, clinics, and vendors. Here, you can directly buy and sell animal health products, access CE courses and webinars, and connect with trusted manufacturers and suppliers.
+This is a leading online marketplace designed specifically for veterinary professionals, clinics, and vendors. Here, you can directly buy and sell animal health products, access CE courses and webinars, and connect with trusted manufacturers and suppliers.
 
 ---
 
