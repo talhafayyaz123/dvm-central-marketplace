@@ -1,0 +1,67 @@
+.container {
+	background-color: var(--gray-section);
+}
+
+.heading_wrapper h2::after {
+	bottom: -4px;
+	width: 59%;
+}
+
+.heading_wrapper p {
+	max-width: 750px !important;
+	margin-top: 2rem;
+}
+
+.why_sell_wrapper {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	column-gap: 4rem;
+	row-gap: 2rem;
+}
+
+.why_sell {
+	display: flex;
+	align-items: center;
+}
+
+.detail {
+	width: 100%;
+}
+
+.detail p {
+	margin-top: 0.75rem;
+}
+
+.icon_wrapper {
+	position: relative;
+	min-width: 100px;
+}
+
+@media all and (max-width: 1024px) {
+	.why_sell_wrapper {
+		gap: 3rem;
+	}
+
+	.why_sell {
+		align-items: flex-start;
+	}
+	.icon_wrapper {
+		min-width: 80px;
+	}
+}
+
+@media all and (max-width: 768px) {
+	.why_sell_wrapper {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media all and (max-width: 576px) {
+	.why_sell_wrapper {
+		gap: 2rem;
+	}
+	.icon_wrapper {
+		min-width: 50px;
+		margin-right: 1rem;
+	}
+}

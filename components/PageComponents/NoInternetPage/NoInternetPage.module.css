@@ -1,0 +1,33 @@
+.no_internet_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 3rem auto;
+  min-height: 80vh;
+  text-align: center;
+  overflow: hidden;
+}
+
+.heading {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 3.5rem !important;
+}
+
+.no_internet_container svg {
+  width: 107%;
+}
+
+@media all and (max-width: 1024px) {
+  .heading {
+    font-size: 3rem !important;
+  }
+}
+
+@media all and (max-width: 576px) {
+  .heading {
+    font-size: 2rem !important;
+  }
+}

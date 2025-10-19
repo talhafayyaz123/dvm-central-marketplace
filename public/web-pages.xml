@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+   <url>
+      <loc>https://dvmcentral.com/</loc>
+      <priority>1.0</priority>
+   </url>
+
+   <url>
+      <loc>https://dvmcentral.com/shop-now</loc>
+      <priority>1.0</priority>
+   </url>
+
+   <url>
+      <loc>https://dvmcentral.com/sell-on-dvm</loc>
+      <priority>1.0</priority>
+   </url>
+
+<url>
+      <loc>https://dvmcentral.com/vendors</loc>
+      <priority>1.0</priority>
+   </url>
+
+   <url>
+      <loc>https://dvmcentral.com/service-providers</loc>
+      <priority>1.0</priority>
+   </url>
+
+
+   <url>
+      <loc>https://dvmcentral.com/today-deals</loc>
+      <priority>1.0</priority>
+   </url>
+
+   <url>
+      <loc>https://dvmcentral.com/featured-products</loc>
+      <priority>1.0</priority>
+   </url>
+
+
+   <url>
+      <loc>https://dvmcentral.com/hot-products</loc>
+      <priority>1.0</priority>
+   </url>
+
+   <url>
+      <loc>https://dvmcentral.com/about-us</loc>
+      <priority>1.0</priority>
+   </url>
+
+    <url>
+      <loc>https://dvmcentral.com/contact</loc>
+      <priority>1.0</priority>
+   </url>
+
+    <url>
+      <loc>https://dvmcentral.com/faqs</loc>
+      <priority>1.0</priority>
+   </url>
+
+    <url>
+      <loc>https://dvmcentral.com/our-mission</loc>
+      <priority>1.0</priority>
+   </url>
+
+    <url>
+      <loc>https://dvmcentral.com/privacy-policy</loc>
+      <priority>1.0</priority>
+   </url>
+
+    <url>
+      <loc>https://dvmcentral.com/terms-and-conditions</loc>
+      <priority>1.0</priority>
+   </url>
+
+    </urlset>

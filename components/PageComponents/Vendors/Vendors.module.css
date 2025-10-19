@@ -1,0 +1,26 @@
+.no_found_error {
+	color: var(--red) !important;
+}
+.vendors_wrapper {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-items: center;
+	gap: 1rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+.scroller {
+	overflow: hidden !important;
+	padding-bottom: 6rem;
+}
+
+.pagination_loader {
+	margin-top: 1rem;
+}
+
+@media all and (max-width: 1024px) {
+	.vendors_wrapper {
+		grid-template-columns: 1fr;
+	}
+}

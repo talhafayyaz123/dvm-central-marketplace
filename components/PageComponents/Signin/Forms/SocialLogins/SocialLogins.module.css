@@ -1,0 +1,75 @@
+.social_logins_wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.social_logins_wrapper button {
+	margin-top: 2rem;
+}
+
+.social_logins_wrapper button:not(:last-of-type) {
+	margin-right: 0.75rem;
+}
+
+.social_logins_wrapper button svg {
+	width: 25px;
+	height: 25px;
+	margin-left: 0.5rem;
+	transition: all 0.5s cubic-bezier(0.87, -0.41, 0.19, 1.44) !important;
+}
+
+.loader {
+	margin-left: 0.5rem;
+}
+
+.social_logins_wrapper button:hover svg {
+	transform: scale(1.2);
+}
+
+.or {
+	margin-top: 2rem;
+	text-align: center;
+	position: relative;
+	z-index: 1 !important;
+	border-bottom: 1px solid var(--gray-border);
+}
+
+.or::after {
+	content: 'or';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	background-color: var(--white);
+	width: 40px;
+}
+
+.google {
+	border-radius: 50%;
+	padding: 5px;
+}
+
+.facebook_btn {
+	background-color: #3b5998;
+}
+
+.linked_btn {
+	background-color: rgb(0, 102, 153);
+}
+
+@media screen and (max-width: 360px) {
+	.social_logins_wrapper {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.social_logins_wrapper button {
+		margin-right: 0 !important;
+	}
+}

@@ -1,0 +1,18 @@
+.social_links_wrapper {
+	display: flex;
+	align-items: center;
+	margin-top: 1.75rem;
+}
+
+.social_links_wrapper a {
+	margin-right: 1rem;
+}
+
+.social_links_wrapper a:hover {
+	opacity: 0.75;
+	transform: translateY(-5px);
+	-webkit-transform: translateY(-5px);
+	-moz-transform: translateY(-5px);
+	-ms-transform: translateY(-5px);
+	-o-transform: translateY(-5px);
+}

@@ -1,0 +1,72 @@
+.webinar_card {
+	padding: 0.75rem;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+.eventimg_wrapper {
+	position: relative;
+	height: auto;
+}
+
+.eventimg_wrapper img,
+.eventimg_wrapper span {
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	border-radius: 10px;
+	width: 100% !important;
+}
+
+.name {
+	margin-top: 1rem;
+	margin-bottom: 0.5rem;
+	font-family: 'poppins-m';
+}
+
+.slider_title {
+	font-size: var(--p) !important;
+}
+
+.start_date {
+	margin: 0.15rem 0;
+	font-family: 'poppins-r';
+}
+
+.start_date span {
+	font-family: 'poppins-m';
+}
+
+.speakersimg_container {
+	display: flex;
+	align-items: baseline;
+}
+
+.speakerimg_wrapper {
+	position: relative;
+	min-width: 45px;
+	max-width: 45px;
+	min-height: 45px;
+	max-height: 45px;
+	margin-top: 1rem;
+	margin-left: -7.5px;
+}
+
+.speakerimg_wrapper img,
+.speakerimg_wrapper span {
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	-ms-border-radius: 50px;
+	-o-border-radius: 50px;
+	border-radius: 50px;
+}
+
+@media all and (max-width: 576px) {
+	.slider_blog {
+		max-width: 300px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}

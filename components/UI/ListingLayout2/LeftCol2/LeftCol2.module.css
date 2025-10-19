@@ -1,0 +1,10 @@
+.left_col {
+	grid-column-start: 1;
+	grid-column-end: 4;
+}
+
+@media all and (max-width: 1024px) {
+	.left_col {
+		grid-column: 1;
+	}
+}

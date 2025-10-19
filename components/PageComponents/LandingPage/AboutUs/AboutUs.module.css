@@ -1,0 +1,30 @@
+.about h2 {
+  width: 100%;
+  text-align: center;
+}
+
+.about h5 {
+  margin-top: 2rem;
+}
+
+.about p:not(:first-of-type) {
+  margin-top: 0.5rem;
+}
+
+.about ul {
+  margin-top: 1rem;
+}
+
+.about li {
+  list-style-type: disc;
+  margin-left: 2rem;
+}
+
+.about p,
+.about li {
+  color: var(--gray);
+  line-height: 1.6;
+}
+.inner_wrapper {
+  margin-bottom: 2rem;
+}

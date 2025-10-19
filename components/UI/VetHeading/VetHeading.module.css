@@ -1,0 +1,21 @@
+.heading {
+	font-family: 'poppins-r';
+	line-height: 1.2;
+	font-size: var(--h2) !important;
+}
+
+.wrapper h5 {
+	margin-top: 0.5rem;
+}
+
+.heading span {
+	font-family: 'poppins-sb';
+}
+
+.para {
+	margin: 1rem 0;
+}
+
+.btn button {
+	margin-top: 1rem;
+}

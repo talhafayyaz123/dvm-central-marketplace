@@ -1,0 +1,31 @@
+.hero_banner {
+	color: white !important;
+}
+
+.title {
+	font-size: var(--h4);
+}
+
+.deals_wrapper {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 1rem;
+}
+
+@media all and (max-width: 1024px) {
+	.deals_wrapper {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+@media all and (max-width: 768px) {
+	.deals_wrapper {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media all and (max-width: 576px) {
+	.deals_wrapper {
+		grid-template-columns: 1fr;
+	}
+}

@@ -1,0 +1,10 @@
+.left_col {
+	border: none;
+}
+
+.loader {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 70vh;
+}

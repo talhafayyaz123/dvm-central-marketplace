@@ -1,0 +1,38 @@
+.accordion_wrapper svg {
+	stroke: var(--primary);
+}
+
+.accordion_wrapper span {
+	border-color: var(--primary);
+}
+
+.accordion_wrapper span::after {
+	background-color: var(--primary);
+}
+
+.wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.inner_wrapper {
+	display: flex;
+	margin-right: 0.5rem;
+}
+
+.inner_wrapper svg {
+	width: 20px;
+	margin-left: 0.25rem;
+}
+
+.count {
+	font-size: 12px !important;
+	color: var(--white);
+	background-color: var(--primary);
+	width: 20px;
+	height: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

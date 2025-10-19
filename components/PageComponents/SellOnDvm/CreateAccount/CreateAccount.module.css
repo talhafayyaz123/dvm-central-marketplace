@@ -1,0 +1,155 @@
+.content_container {
+	border-radius: 11px;
+	-webkit-border-radius: 11px;
+	-moz-border-radius: 11px;
+	-ms-border-radius: 11px;
+	-o-border-radius: 11px;
+	background-color: var(--white);
+}
+
+.circles_wrapper {
+	background-color: var(--after-gradient);
+	padding: 0.75rem 2rem;
+	border-top-left-radius: 11px;
+	border-top-right-radius: 11px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.play_button {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+.circles {
+	display: flex;
+	align-items: center;
+}
+
+.circle {
+	width: 0.75rem;
+	height: 0.75rem;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	background-color: var(--black);
+}
+
+.circle:nth-of-type(2) {
+	margin: 0 0.75rem;
+}
+
+.red_circle {
+	background-color: var(--red);
+}
+
+.yellow_circle {
+	background-color: var(--yellow);
+}
+
+.green_circle {
+	background-color: #18e08f;
+}
+
+.content_wrapper {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 2rem;
+}
+
+.heading_wrapper {
+	text-align: left !important;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.heading_wrapper p {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.video_img_wrapper {
+	cursor: pointer;
+	width: 100%;
+	height: max-content;
+	position: relative;
+	overflow: hidden;
+}
+
+.video_img_wrapper span,
+.video_img_wrapper img {
+	height: 100% !important;
+	max-height: 100% !important;
+	border-radius: 15px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-ms-border-radius: 15px;
+	-o-border-radius: 15px;
+}
+
+.list_wrapper li {
+	display: flex;
+	align-items: center;
+	margin-top: 1rem;
+	line-height: 1.5;
+}
+
+.list_wrapper li svg {
+	width: 20px;
+	margin-right: 10px;
+}
+
+.video_wrapper {
+	position: relative;
+	width: 100%;
+	height: max-content;
+	padding-top: 56.25%;
+	overflow: hidden;
+}
+
+.video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+@media all and (max-width: 1024px) {
+	.content_wrapper {
+		grid-template-columns: 1fr;
+		justify-items: center;
+	}
+
+	.heading_wrapper {
+		text-align: center !important;
+		align-items: center;
+	}
+
+	.video_img_wrapper {
+		display: flex;
+		justify-content: center;
+	}
+}
+
+@media all and (max-width: 576px) {
+	.list_wrapper li {
+		align-items: flex-start;
+		text-align: left !important;
+	}
+
+	.list_wrapper li span {
+		width: 88%;
+	}
+}

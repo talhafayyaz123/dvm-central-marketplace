@@ -1,0 +1,40 @@
+.accordion_wrapper {
+	padding: 1rem 0;
+	border-bottom: 1px solid var(--gray-border);
+	overflow: hidden;
+}
+
+.accordion_wrapper:last-of-type {
+	border: none;
+}
+
+.title_wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	cursor: pointer;
+	position: sticky;
+	top: 0;
+	z-index: 5;
+	padding-top: 1rem;
+}
+
+.padding {
+	padding-bottom: 1rem;
+}
+
+.title {
+	font-size: var(--h5);
+	font-family: 'poppins-m';
+}
+
+.title_wrapper svg {
+	width: 15px;
+	margin-left: 1rem;
+}
+
+.opened_accordion {
+	position: relative;
+	overflow: hidden;
+	transition: all 0.3s ease-in-out !important;
+}

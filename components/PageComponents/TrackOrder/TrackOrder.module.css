@@ -1,0 +1,257 @@
+.hero_banner {
+	background-image: url("/imgs/track-order/Web Banner's-04.jpg") !important;
+}
+
+.inner_headings p {
+	margin-top: 0.5rem;
+	margin-bottom: 1rem;
+}
+
+.back_to_signin {
+	position: relative;
+	margin-top: 3rem;
+}
+
+.back_to_signin svg {
+	margin-left: 0;
+	margin-right: 5px;
+}
+
+.back_to_signin:hover svg {
+	-webkit-transform: translateX(-5px);
+	-moz-transform: translateX(-5px);
+	-ms-transform: translateX(-5px);
+	-o-transform: translateX(-5px);
+	transform: translateX(-5px);
+}
+
+.fields_wrapper {
+	max-width: 600px;
+	margin-top: 2rem;
+}
+
+.inner_wrapper {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+
+.inner_wrapper span {
+	color: var(--red);
+}
+
+.input {
+	padding: 0.65rem;
+	border: 1px solid var(--gray-border);
+	width: 100%;
+	border-radius: 5px;
+	margin-top: 1rem;
+}
+
+.input::placeholder {
+	font-size: 12px;
+}
+
+.btn {
+	width: max-content;
+	height: max-content;
+	margin-top: 2rem;
+}
+
+.error_msg {
+	font-size: 14px !important;
+	color: var(--red);
+}
+
+.submit_loader {
+	margin-left: 1rem;
+}
+
+.btn:disabled {
+	cursor: not-allowed;
+}
+
+.btn {
+	margin-top: 2rem;
+}
+
+.signin_error {
+	margin-bottom: 1rem;
+	background-color: var(--lite-red);
+	width: max-content;
+	padding: 0.5rem 1rem;
+	display: flex;
+	align-items: center;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.signup_suc svg,
+.signin_error svg {
+	margin-right: 0.5rem;
+	min-width: 20px;
+	max-width: 20px;
+}
+
+.signup_suc {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	color: var(--green);
+	background-color: var(--lite-green);
+	line-height: 1.2;
+	padding: 0.5rem;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	border-radius: 10px;
+	margin-bottom: 1rem;
+}
+
+.hide_forgot_form {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+.order_detail_wrapper {
+	display: grid;
+	grid-template-columns: repeat(8, 1fr);
+	border: 1px solid var(--gray-border);
+	margin-top: 1rem;
+	overflow: hidden;
+	border-radius: 7.5px;
+}
+
+.order_detail_wrapper {
+	border-bottom: 0;
+}
+
+.two_col {
+	grid-column-start: 3;
+	grid-column-end: 5;
+}
+
+.border {
+	border-right: 1px solid var(--gray-border);
+}
+
+.wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.wrapper.border {
+	border-bottom: 0px !important;
+}
+
+.title {
+	padding: 0.75rem;
+	background-color: var(--primary);
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-bottom: 1px solid var(--white);
+	color: var(--white);
+}
+
+.text {
+	padding: 0.5rem;
+	text-align: center;
+}
+
+.tracking_loader {
+	margin-left: 1rem;
+}
+
+.img {
+	border: 1px solid var(--gray-border);
+	margin: 0.5rem;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.img img {
+	border-radius: 15px;
+	padding: 0.25rem !important;
+}
+
+.name {
+	font-size: var(--h5);
+	font-family: 'poppins-m';
+	line-height: 1.3;
+}
+
+.qty {
+	width: 40px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.order_detail_container {
+	position: relative;
+}
+
+.heading_wrapper {
+	position: sticky;
+	top: 80px;
+	left: 0;
+	z-index: 5;
+}
+
+.status div {
+	position: relative;
+}
+
+.status div::after {
+	content: '';
+	position: absolute;
+	bottom: -5px;
+	left: 0;
+	background-image: linear-gradient(90deg, #c12dd1, #6d8cf8) !important;
+	width: 100%;
+	height: 2px;
+}
+
+@media all and (max-width: 768px) {
+	.order_detail_container {
+		overflow-y: hidden;
+		overflow-x: auto;
+	}
+	.order_detail_wrapper {
+		min-width: 750px;
+	}
+
+	.heading_wrapper {
+		position: relative;
+		top: initial;
+	}
+}
+
+@media all and (max-width: 576px) {
+	.inner_wrapper {
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+
+	.error_msg {
+		margin-top: 0.5rem;
+	}
+}

@@ -1,0 +1,29 @@
+.realted_container {
+	background-color: var(--gray-section);
+}
+
+.cards_wrapper {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 1rem;
+	row-gap: 4rem;
+	margin-top: 2rem;
+}
+
+@media screen and (max-width: 1024px) {
+	.cards_wrapper {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.cards_wrapper {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.cards_wrapper {
+		grid-template-columns: 1fr;
+	}
+}

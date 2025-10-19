@@ -1,0 +1,17 @@
+.product_info_outer_wrapper {
+	border-bottom: 1px solid var(--gray-border);
+}
+
+.product_info_wrapper {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 2rem;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+@media all and (max-width: 1024px) {
+	.product_info_wrapper {
+		grid-template-columns: 1fr;
+	}
+}

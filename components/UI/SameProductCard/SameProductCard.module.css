@@ -1,0 +1,158 @@
+.same_product {
+	position: relative;
+	background-color: var(--white);
+	padding: 1rem;
+	width: 100%;
+	max-width: 450px;
+}
+
+.wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.detail_wrapper {
+	margin-top: 1rem;
+	display: flex;
+	width: 100%;
+	cursor: pointer;
+}
+
+.name_price_wrapper,
+.img_wrapper,
+.best_sell {
+	cursor: pointer;
+}
+
+.best_sell {
+	background-color: var(--new-lite-pink);
+}
+
+.img_wrapper {
+	min-width: 100px;
+	max-width: 100px;
+	margin-right: 1rem;
+}
+
+.name_price_wrapper {
+	width: 100%;
+}
+
+.name_wrapper {
+	display: flex;
+	flex-direction: column;
+}
+
+.name {
+	line-height: 1.2;
+}
+
+.sku,
+.price {
+	margin-top: 1rem;
+}
+
+button.price {
+	padding: 0;
+	background-color: transparent;
+	font-size: 14px !important;
+}
+
+.request_loader {
+	margin-left: 0.5rem;
+}
+
+.btn {
+	height: max-content;
+	width: max-content;
+	margin-top: 1rem;
+}
+
+.loader {
+	margin-left: 0.5rem;
+}
+
+.sku {
+	color: var(--red);
+	margin-bottom: -0.5rem;
+}
+
+.price_rating {
+	display: flex;
+	flex-direction: column;
+	margin-top: 0.5rem;
+	width: 100%;
+}
+
+.price {
+	color: var(--primary);
+	flex-wrap: wrap;
+	font-family: 'poppins-sb';
+	font-size: var(--h5);
+	width: auto;
+}
+
+.price span {
+	display: inline-block;
+}
+
+.price span:first-of-type {
+	margin-right: 0.5rem;
+}
+
+.price span:nth-of-type(2) {
+	color: var(--lite-black);
+	margin-right: 0.5rem;
+	text-decoration: line-through;
+}
+
+.price span:not(:first-of-type) {
+	font-family: 'poppins-r';
+	font-size: var(--p);
+}
+
+.price span:last-of-type {
+	color: var(--red);
+}
+
+.rating {
+	margin-top: 0.5rem !important;
+}
+
+.special_price {
+	margin-top: 0.25rem;
+	width: max-content;
+	max-width: 100%;
+	color: var(--green);
+	border-radius: 5px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	font-size: 14px !important;
+}
+
+.special_price span {
+	margin-top: 0.15rem;
+}
+
+.modal_loader {
+	position: absolute;
+	bottom: 1rem;
+	right: 1rem;
+	margin-top: 1rem;
+	align-self: flex-start;
+}
+
+@media all and (max-width: 576px) {
+	.img_wrapper {
+		min-width: 75px;
+		max-width: 75px;
+		margin-right: 1rem;
+	}
+
+	.icon_wrapper svg {
+		width: 20px;
+	}
+}

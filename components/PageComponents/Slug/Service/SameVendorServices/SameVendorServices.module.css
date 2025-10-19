@@ -1,0 +1,32 @@
+.same_products_wrapper {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1rem;
+	margin-top: 2rem;
+}
+
+@media all and (max-width: 1024px) {
+	.same_products_wrapper {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.card:last-of-type {
+		transform: translateX(50%);
+	}
+}
+
+@media all and (max-width: 768px) {
+	.same_products_container h4 {
+		text-align: center;
+	}
+
+	.same_products_wrapper {
+		grid-template-columns: 1fr;
+		justify-items: center;
+		align-content: center;
+	}
+
+	.card:last-of-type {
+		transform: translateX(0%);
+	}
+}

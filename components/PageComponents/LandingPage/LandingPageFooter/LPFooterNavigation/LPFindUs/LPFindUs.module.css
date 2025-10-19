@@ -1,0 +1,43 @@
+.logo_wrapper {
+	width: 180px;
+}
+
+.lp_social_links {
+	display: flex;
+	align-items: center;
+}
+
+.lp_social_links li {
+	margin-top: 0 !important;
+	margin-right: 1rem;
+}
+
+.lp_social_links a {
+	background-color: var(--white);
+	border: 1px solid var(--secondary);
+	width: 40px;
+	height: 40px;
+	border-radius: 50px;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	-ms-border-radius: 50px;
+	-o-border-radius: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.lp_social_links svg {
+	width: 25px !important;
+	height: 25px !important;
+	margin-right: 0 !important;
+}
+
+.lp_social_links a:hover {
+	opacity: 0.75;
+	transform: translateY(-5px) !important;
+	-webkit-transform: translateY(-5px) !important;
+	-moz-transform: translateY(-5px) !important;
+	-ms-transform: translateY(-5px) !important;
+	-o-transform: translateY(-5px) !important;
+}

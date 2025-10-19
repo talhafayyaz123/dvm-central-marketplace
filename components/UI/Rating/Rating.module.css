@@ -1,0 +1,21 @@
+.stars_wrapper {
+	display: flex;
+	align-items: center;
+  }
+
+.star_wrapper:not(:last-of-type) {
+	margin-right: 3px;
+}
+
+.star_wrapper svg {
+	width: 15px;
+	margin-right: 0 !important;
+}
+
+.big_stars_wrapper {
+	height: 20px;
+}
+
+.big_stars_wrapper svg {
+	width: 20px;
+}

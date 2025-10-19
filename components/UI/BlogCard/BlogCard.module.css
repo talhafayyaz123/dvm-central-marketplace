@@ -1,0 +1,151 @@
+.blog_card {
+	display: flex;
+	background-color: var(--white);
+	position: relative;
+	border: 1px solid transparent;
+}
+
+.blog_card:not(:last-of-type) {
+	border-bottom: 1px solid var(--gray-border);
+	padding-bottom: 0.75rem;
+}
+
+.img_wrapper {
+	position: relative;
+	min-width: 300px;
+	padding-top: 60%;
+}
+
+.img_wrapper img {
+	border-radius: 15px;
+}
+
+.blog_info {
+	margin-left: 1.5rem;
+	width: 100%;
+}
+
+.reading_time {
+	font-weight: bold;
+	font-size: 12px !important;
+}
+
+.blog_info p {
+	margin-top: 0.5rem;
+}
+
+.writer_container,
+.read_date {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.writer_container {
+	width: 100%;
+	justify-content: space-between;
+	margin-top: 0.5rem;
+}
+
+.read_date {
+	margin-right: 0.5rem;
+}
+
+.read_date span {
+	margin: 0 0.5rem;
+}
+
+.writer_wrapper {
+	display: flex;
+	align-items: center;
+}
+
+.writer_img {
+	width: 40px;
+	height: 40px;
+	margin-right: 0.5rem;
+	overflow: hidden;
+	padding: 1px;
+}
+
+.writer_img div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/* recent blog */
+
+.recent_card {
+	flex-direction: column;
+	border: 0 !important;
+	padding-bottom: 0 !important;
+}
+
+.recent_card h5 {
+	font-size: var(--p) !important;
+	margin-top: 0.5rem;
+}
+
+.recent_card .blog_info {
+	margin-left: 0;
+}
+
+.recent_card .img_wrapper {
+	min-width: 250px;
+}
+
+.category_wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.category_wrapper .category_text {
+	margin-top: 0.5rem;
+	margin-right: -0.5rem;
+}
+
+.category {
+	margin-left: 1rem;
+}
+
+.category button {
+	padding: 2px 7.5px;
+	margin-top: 0.5rem;
+	border-radius: 7.5px;
+	background-color: var(--new-lite-pink);
+}
+
+.margin_bottom {
+	margin-bottom: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+	.img_wrapper {
+		min-width: 250px;
+	}
+	.margin {
+		margin-bottom: 0.5rem;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.blog_card {
+		flex-direction: column;
+	}
+
+	.img_wrapper {
+		min-width: 100%;
+	}
+
+	.blog_info {
+		margin-left: 0;
+		margin-top: 1rem;
+	}
+}
+
+@media all and (max-width: 480px) {
+	.margin_bottom:last-child {
+		margin: 0;
+	}
+}

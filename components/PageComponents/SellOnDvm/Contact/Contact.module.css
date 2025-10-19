@@ -1,0 +1,25 @@
+.container {
+	position: relative;
+}
+
+.contact_wrapper {
+	display: grid;
+	gap: 3rem;
+}
+
+@media all and (max-width: 1024px) {
+	.contact_wrapper {
+		gap: 2rem;
+	}
+}
+
+@media all and (max-width: 768px) {
+	.contact_wrapper {
+		grid-template-columns: 1fr;
+		justify-items: center;
+	}
+
+	.left_img_wrapper {
+		width: 80%;
+	}
+}

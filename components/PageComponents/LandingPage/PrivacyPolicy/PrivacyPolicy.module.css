@@ -1,0 +1,28 @@
+.policy p:not(:first-of-type) {
+	margin-top: 0.5rem;
+}
+
+.policy h2 {
+	margin-bottom: 2rem;
+	text-align: center;
+	width: 100%;
+}
+
+.policy h5 {
+	margin-top: 2rem;
+}
+
+.policy ul {
+	margin-top: 1rem;
+	color: var(--gray);
+}
+
+.policy li {
+	list-style-type: disc;
+	margin-left: 2rem;
+	line-height: 1.6;
+}
+
+.policy a {
+	border-bottom: 1px solid var(--secondary);
+}

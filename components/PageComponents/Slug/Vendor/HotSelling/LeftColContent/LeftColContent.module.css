@@ -1,0 +1,30 @@
+.mob_img,
+.top_img,
+.left_img {
+	margin-bottom: 1rem;
+	cursor: pointer;
+}
+
+.top_img,
+.mob_img {
+	display: none;
+}
+
+@media screen and (max-width: 1024px) {
+	.left_img {
+		display: none;
+	}
+
+	.top_img {
+		display: block;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.top_img {
+		display: none;
+	}
+	.mob_img {
+		display: block;
+	}
+}

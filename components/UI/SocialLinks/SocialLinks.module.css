@@ -1,0 +1,50 @@
+.social_links_wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.social_links_wrapper li {
+	max-height: 31.27px;
+}
+
+.mail {
+	width: 31.27px;
+	height: 31.27px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--primary);
+}
+
+.mail svg {
+	width: 20px;
+	height: 20px;
+	fill: var(--white);
+}
+
+.social_links_wrapper li:not(:last-of-type) {
+	margin-right: 1rem;
+}
+
+.social_links_wrapper a:hover {
+	opacity: 0.75;
+	-webkit-transform: translateY(-5px);
+	-moz-transform: translateY(-5px);
+	-ms-transform: translateY(-5px);
+	-o-transform: translateY(-5px);
+	transform: translateY(-5px);
+}
+
+.youtube_icon {
+	width: 31.27px;
+	height: 31.27px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.youtube_icon svg {
+	width: 22px !important;
+}

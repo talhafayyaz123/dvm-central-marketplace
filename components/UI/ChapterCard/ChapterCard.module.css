@@ -1,0 +1,58 @@
+.chapter_card {
+	margin-bottom: 2rem;
+}
+
+.videos_wrapper {
+	display: flex;
+	margin-top: 1rem;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.accordion {
+	max-width: 100%;
+}
+
+.margin {
+	margin: 1rem 0;
+}
+
+.error {
+	cursor: pointer;
+	width: max-content;
+}
+
+.no_data {
+	align-self: flex-start;
+	margin: 1rem 0;
+}
+
+.playlist_wrapper {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 1rem;
+}
+
+@media all and (max-width: 1024px) {
+	.playlist_wrapper {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+@media all and (max-width: 768px) {
+	.playlist_wrapper {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media all and (max-width: 576px) {
+	.answer {
+		padding: 0 1rem;
+	}
+}
+
+@media all and (max-width: 480px) {
+	.playlist_wrapper {
+		grid-template-columns: 1fr;
+	}
+}

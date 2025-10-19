@@ -1,0 +1,62 @@
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	text-align: center;
+	opacity: 0;
+	padding: 0 2rem;
+}
+
+.img_wrapper svg {
+   width: 100px;
+}
+
+.wrapper span {
+	position: relative;
+	font-family: 'poppins-m';
+	color: var(--primary);
+	line-height: 0.8;
+	display: inline-block;
+}
+
+.wrapper span:nth-of-type(2),
+.wrapper span:nth-of-type(4) {
+	z-index: 2;
+}
+
+.wrapper h5 {
+	margin-top: 1rem;
+}
+
+@media all and (max-width: 1024px) {
+	.wrapper span {
+		font-size: 10rem;
+	}
+
+	.img_wrapper {
+		margin-top: -5rem;
+		width: 100%;
+	}
+}
+
+@media all and (max-width: 768px) {
+	.wrapper span {
+		font-size: 8rem;
+	}
+
+	.img_wrapper {
+		margin-top: -4rem;
+	}
+}
+
+@media all and (max-width: 576px) {
+	.wrapper span {
+		font-size: 5rem;
+	}
+
+	.img_wrapper {
+		margin-top: -2.5rem;
+	}
+}

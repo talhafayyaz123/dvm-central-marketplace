@@ -1,0 +1,32 @@
+.product:not(:last-of-type) {
+	margin-bottom: 1rem;
+}
+
+.products_wrapper {
+	margin-top: 1rem;
+}
+
+.margin_layout {
+	margin-top: 2rem;
+}
+@media screen and (max-width: 1024px) {
+	.right_col {
+		max-width: 100%;
+	}
+
+	.products_wrapper {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 1rem;
+	}
+
+	.product:not(:last-of-type) {
+		margin-bottom: 0;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.products_wrapper {
+		grid-template-columns: 1fr;
+	}
+}

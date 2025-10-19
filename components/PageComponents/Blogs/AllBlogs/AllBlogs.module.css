@@ -1,0 +1,15 @@
+.blogs_wrapper {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 1rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+.pagination_loader {
+	margin-top: 1rem;
+}
+
+.scroller {
+	overflow: hidden !important;
+}

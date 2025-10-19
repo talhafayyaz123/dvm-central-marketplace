@@ -1,0 +1,43 @@
+.header_container {
+	padding: 0.75rem 0;
+	position: sticky;
+	top: 0;
+	z-index: 10;
+}
+
+.logo {
+	margin-right: 1rem;
+}
+
+.header_wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.desktop_search_container {
+	width: 50%;
+	margin: 0 auto;
+}
+
+@media all and (max-width: 1250px) {
+	.desktop_search_container {
+		display: none;
+	}
+}
+
+@media all and (max-width: 576px) {
+	.header_container {
+		position: relative;
+	}
+
+	.logo {
+		width: 150px;
+	}
+}
+
+@media all and (max-width: 360px) {
+	.logo {
+		width: 125px;
+	}
+}

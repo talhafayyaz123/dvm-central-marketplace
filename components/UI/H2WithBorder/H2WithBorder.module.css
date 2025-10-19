@@ -1,0 +1,20 @@
+.h2_with_border::after {
+	content: '';
+	position: absolute;
+	bottom: -7px;
+	left: 0;
+	width: 70%;
+	height: 16px;
+	z-index: -1;
+}
+
+@media all and (max-width: 576px) {
+	.h2_with_border::after {
+		left: 50%;
+		transform: translateX(-50%);
+		-webkit-transform: translateX(-50%);
+		-moz-transform: translateX(-50%);
+		-ms-transform: translateX(-50%);
+		-o-transform: translateX(-50%);
+	}
+}

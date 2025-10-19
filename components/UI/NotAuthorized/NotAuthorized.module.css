@@ -1,0 +1,32 @@
+.no_access {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 70vh;
+}
+
+.no_access svg {
+	width: 35%;
+}
+
+.no_access h4 {
+	margin-top: 2rem;
+	text-align: center;
+}
+
+.btn {
+	margin-top: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+	.no_access svg {
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.no_access svg {
+		width: 60%;
+	}
+}

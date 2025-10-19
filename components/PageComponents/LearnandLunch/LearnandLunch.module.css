@@ -1,0 +1,27 @@
+.text {
+	margin-top: 1rem;
+}
+
+.vendors_wrapper {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1rem;
+}
+
+.title {
+	font-size: var(--h3);
+	font-family: 'poppins-m';
+	margin-bottom: 2rem;
+}
+
+@media all and (max-width: 1024px) {
+	.vendors_wrapper {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media all and (max-width: 576px) {
+	.vendors_wrapper {
+		grid-template-columns: 1fr;
+	}
+}

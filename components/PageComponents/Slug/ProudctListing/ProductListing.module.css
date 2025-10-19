@@ -1,0 +1,9 @@
+.single_col {
+	grid-column: 1 / 5;
+}
+
+@media all and (max-width: 1024px) {
+	.left_col {
+		display: none;
+	}
+}

@@ -1,0 +1,13 @@
+.btn {
+	margin-top: 3rem;
+}
+
+.info {
+	color: var(--lite-white);
+}
+.heading_wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}

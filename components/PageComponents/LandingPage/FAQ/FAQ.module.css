@@ -1,0 +1,156 @@
+.faq_container {
+  background-color: #eceef6;
+  overflow: hidden;
+}
+
+.heading_container h2,
+.heading_container h1 {
+  max-width: 550px;
+  font-size: var(--h2) !important;
+}
+
+.faqs_wrapper {
+  width: 100%;
+  max-width: 700px;
+  margin: 50px auto 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.faqs_wrapper_width{
+  max-width: 100%;
+}
+
+.dashboard_faqs .faqs_wrapper {
+  margin-top: 0 !important;
+}
+
+.traiangles_wrapper {
+  position: absolute;
+  top: 0;
+  right: 25%;
+}
+.triangle:not(:last-of-type) {
+  margin-bottom: 7.5px;
+}
+
+.triangle {
+  animation: spining 10s linear infinite;
+  -webkit-animation: spining 10s linear infinite;
+}
+
+.wave {
+  position: absolute;
+  bottom: -50px;
+  right: 0;
+}
+
+.left_circle {
+  position: absolute;
+  top: 60%;
+  left: 10%;
+}
+
+.right_circle {
+  position: absolute;
+  top: 40%;
+  right: 10%;
+}
+
+.line_circle {
+  position: absolute;
+  top: -7.5%;
+  left: -2.5%;
+}
+
+.dot_circle {
+  position: absolute;
+  top: -9%;
+  left: 0;
+  opacity: 0.5;
+  animation: spining 40s linear infinite;
+  -webkit-animation: spining 40s linear infinite;
+}
+
+.red_circle {
+  position: absolute;
+  top: -8%;
+  left: 2.5%;
+}
+
+.answer {
+  margin: 1rem 0;
+}
+
+.all_faq_btn {
+  margin-top: 50px;
+}
+
+/* dasboard faq  */
+.dashboard_faqs {
+  background-color: transparent;
+  padding-bottom: 3rem;
+  margin-top: -3rem;
+}
+
+@keyframes spining {
+  from {
+    transform: rotate(0);
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -o-transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .dot_circle,
+  .traiangles_wrapper {
+    display: none;
+  }
+
+  .line_circle {
+    top: -25%;
+    left: -10%;
+  }
+
+  .left_circle {
+    left: 5%;
+  }
+
+  .right_circle {
+    right: 5%;
+  }
+
+  .red_circle {
+    top: -15%;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .right_circle,
+  .left_circle {
+    display: none;
+  }
+}
+
+@media all and (max-width: 576px) {
+  .red_circle {
+    left: -15%;
+    top: -25%;
+  }
+
+  .line_circle {
+    left: -40%;
+    top: -40%;
+  }
+}

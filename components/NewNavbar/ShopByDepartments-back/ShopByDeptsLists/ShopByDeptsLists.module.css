@@ -1,0 +1,51 @@
+.shop_by_depts_lists {
+	height: calc(100% - 65px);
+}
+
+.shop_by_link_wrapper {
+	border-bottom: 1px solid var(--gray-border);
+	display: flex;
+	align-items: center;
+	padding: 0.75rem 1rem;
+	cursor: pointer;
+	font-family: 'poppins-m';
+	transition: none;
+	width: 100%;
+}
+
+.shop_by_link_wrapper h5 {
+	width: 100%;
+}
+
+.shop_by_heading {
+	padding: 1rem;
+	font-size: var(--h4);
+	font-family: 'poppins-sb';
+}
+
+.shop_by_other_links {
+	display: flex;
+	align-items: center;
+	color: var(--gray-icon);
+	padding: 0.5rem 2rem;
+}
+
+.shop_by_other_links:last-of-type {
+	margin-bottom: 4rem;
+	display: inline-block;
+	width: 100%;
+}
+
+.shop_by_other_links svg {
+	width: 20px;
+	margin-right: 10px;
+}
+
+.shop_by_other_links:hover,
+.shop_by_link_wrapper:hover {
+	background-color: var(--new-lite-pink);
+}
+
+.shop_by_link h5 {
+	width: 100%;
+}

@@ -1,0 +1,77 @@
+.related_products_container {
+	position: relative;
+	margin-top: 2rem;
+}
+
+.related_products_wrapper {
+	width: 90%;
+}
+
+.prev_btn,
+.next_btn {
+	position: absolute;
+	min-width: 50px;
+	max-width: 50px;
+	min-height: 50px;
+	max-height: 50px;
+	padding: 0.75rem;
+	background-color: var(--white);
+	top: 25%;
+	z-index: 2;
+	cursor: pointer;
+	border: 1px solid var(--gray-border);
+}
+
+.prev_btn:hover,
+.next_btn:hover {
+	border-color: var(--primary);
+}
+
+.next_btn {
+	left: auto;
+	right: 0;
+}
+
+.prev_btn {
+	right: auto;
+	left: 0;
+}
+
+@media all and (max-width: 1024px) {
+	.related_products_wrapper {
+		width: 85%;
+	}
+
+	.prev_btn,
+	.next_btn {
+		top: 22.5%;
+	}
+}
+
+@media all and (max-width: 768px) {
+	.related_products_wrapper {
+		width: 80%;
+	}
+
+	.prev_btn,
+	.next_btn {
+		top: 25%;
+	}
+}
+
+@media all and (max-width: 576px) {
+	.prev_btn,
+	.next_btn {
+		min-width: 40px;
+		max-width: 40px;
+		min-height: 40px;
+		max-height: 40px;
+	}
+}
+
+@media all and (max-width: 480px) {
+	.prev_btn,
+	.next_btn {
+		top: 30%;
+	}
+}

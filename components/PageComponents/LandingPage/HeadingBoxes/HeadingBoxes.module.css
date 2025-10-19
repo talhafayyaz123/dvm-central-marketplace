@@ -1,0 +1,42 @@
+.boxes_wrapper {
+	position: relative;
+	display: inline-block;
+	margin-right: 10px;
+	margin-bottom: 5px;
+	min-width: 40px;
+	max-width: 40px;
+}
+
+.box {
+	display: inline-block;
+}
+
+.terqois_s_box {
+	width: 5px;
+	height: 5px;
+	background-color: var(--terqois);
+	margin-bottom: 20px;
+	margin-left: 1px;
+}
+
+.terqois_b_box {
+	width: 10px;
+	height: 10px;
+	background-color: var(--terqois);
+	margin-bottom: 8px;
+	margin-left: 2px;
+}
+
+.purple_box {
+	width: 17px;
+	height: 17px;
+	background-color: #7c0dbe;
+}
+
+.pink_box {
+	width: 12px;
+	height: 12px;
+	background-color: #ff00d6;
+	margin-left: -8px;
+	margin-bottom: -4px;
+}

@@ -1,0 +1,32 @@
+.recent_blogs_container {
+	grid-column: 3/3;
+}
+
+.recent_blogs_wrapper {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 1rem;
+	margin-top: 1rem;
+}
+
+@media all and (max-width: 1024px) {
+	.recent_blogs_container {
+		grid-column: 1;
+	}
+
+	.recent_blogs_wrapper {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media all and (max-width: 768px) {
+	.recent_blogs_wrapper {
+		gap: 1rem;
+	}
+}
+
+@media all and (max-width: 576px) {
+	.recent_blogs_wrapper {
+		grid-template-columns: 1fr;
+	}
+}

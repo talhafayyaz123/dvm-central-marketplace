@@ -1,0 +1,68 @@
+.shop_by_wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	padding: 0;
+	background-color: transparent;
+	padding-top: 0.5rem 0 !important;
+	min-width: max-content;
+	font-family: 'poppins-m';
+}
+
+.shop_by_wrapper:hover svg {
+	transform: translate(0);
+}
+
+.shop_by_wrapper:hover svg path {
+	fill: var(--lite-dark-primary);
+}
+
+.shop_by_wrapper:hover div {
+	color: var(--lite-dark-primary) !important;
+}
+
+.shop_by_wrapper svg {
+	width: 22px !important;
+	height: 22px !important;
+	margin-left: -4px;
+	margin-right: 1rem;
+}
+
+.small_header_wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.4rem 0;
+}
+
+@media all and (max-width: 1250px) {
+	/* .small_header_container {
+		display: none;
+	} */
+
+	.ticker_wrapper {
+		max-width: max-content;
+	}
+}
+
+@media all and (max-width: 768px) {
+	.ticker_wrapper {
+		margin-left: 2rem;
+	}
+}
+
+@media all and (max-width: 576px) {
+	.btn_ticker_wrapper {
+		justify-content: space-between;
+	}
+
+	.ticker_wrapper {
+		margin-left: 0.5rem;
+	}
+
+	.ticker {
+		word-break: break-word !important;
+		white-space: pre-wrap;
+	}
+}

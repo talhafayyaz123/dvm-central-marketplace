@@ -1,0 +1,28 @@
+.card {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 2rem;
+	height: 100%;
+}
+
+.name {
+	color: var(--new-secondary);
+	margin: 1.5rem 0 0.25rem 0;
+}
+
+.card p {
+	margin-top: 1rem;
+}
+
+.img {
+	overflow: hidden;
+}
+
+@media all and (max-width: 576px) {
+	.card {
+		padding: 2rem 1rem;
+	}
+}

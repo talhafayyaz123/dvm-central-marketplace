@@ -1,0 +1,177 @@
+.blog_detail_wrapper {
+	width: 100%;
+	max-width: calc(100% - 250px);
+}
+
+.no_content {
+	max-width: 100% !important;
+}
+
+.btns_wrapper,
+.date_social_wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.date_wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	margin-right: 0.5rem;
+}
+
+.date {
+	margin-top: 0.75rem;
+}
+
+.date_wrapper span {
+	margin: 0.75rem 0.5rem 0 0.5rem;
+}
+
+.social_links {
+	margin-top: 0.75rem;
+}
+
+.contents_btn {
+	position: relative;
+	width: max-content;
+	margin-top: 0.75rem;
+}
+
+.contents_btn h4 {
+	position: sticky;
+	top: 0;
+}
+
+.img_wrapper {
+	position: relative;
+	max-width: 90vw;
+}
+
+.img_wrapper {
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-ms-border-radius: 15px;
+	-o-border-radius: 15px;
+	border-radius: 15px;
+}
+
+.dynamic_data img {
+	max-width: calc(100% - 250px) !important;
+}
+
+.wrapper {
+	margin-top: 3rem;
+}
+
+/* contents */
+.content {
+	display: flex;
+	align-items: flex-start;
+	border-bottom: 1px solid var(--gray-border);
+	padding: 0.75rem 1rem;
+}
+
+.content svg {
+	min-width: 15px;
+	max-width: 15px;
+	margin-top: 5px;
+	margin-right: 0.5rem;
+}
+
+/* tags */
+.tags_wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 1rem;
+}
+
+.tags_wrapper button {
+	margin-top: 1rem;
+	cursor: text;
+}
+
+.tags_wrapper a:not(:last-of-type) {
+	margin-right: 1rem;
+}
+
+/* prev next btns */
+.btns_wrapper {
+	margin-top: 1rem;
+}
+
+.btns_wrapper button {
+	margin-top: 1rem;
+}
+
+.tags_btn {
+	border-radius: 7.5px;
+	padding: 7px 17px !important;
+}
+
+.opacity {
+	position: fixed;
+	top: 100px;
+	right: 50px;
+	animation: 0.3s opacity cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+
+.hiddenBtn {
+	position: fixed;
+	top: 100px;
+	right: 15px;
+	transform: translateX(200px);
+	transition: all 0.6s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+	opacity: 0;
+	display: none;
+}
+
+.show_btn {
+	transform: translateX(0);
+	opacity: 1;
+}
+
+@keyframes opacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@media all and (max-width: 1024px) {
+	.blog_detail_wrapper {
+		width: 100%;
+		max-width: 100%;
+	}
+	.dynamic_data img {
+		max-width: 100% !important;
+	}
+
+	.social_links {
+		margin-right: 0.5rem;
+	}
+
+	.hiddenBtn {
+		display: flex;
+	}
+}
+
+@media all and (max-width: 768px) {
+	.opacity {
+		right: 10px;
+	}
+}
+
+@media all and (max-width: 576px) {
+	.opacity {
+		top: 10px;
+	}
+
+	.dynamic_data img {
+		max-width: 90vw !important;
+	}
+}

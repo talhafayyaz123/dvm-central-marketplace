@@ -1,0 +1,246 @@
+.card {
+	width: 100%;
+	position: relative;
+	padding: 1rem 0;
+}
+
+.bgimg_wrapper {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+	opacity: 0.025;
+}
+
+.bgimg_wrapper img,
+.bgimg_wrapper span {
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-ms-border-radius: 15px;
+	-o-border-radius: 15px;
+	border-radius: 15px;
+}
+
+.products {
+	margin-top: 0.5rem;
+}
+
+.content_wrapper {
+	display: flex;
+	width: 100%;
+}
+
+.card_content {
+	position: relative;
+	z-index: 2;
+	padding: 1rem;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	order: 1;
+}
+
+.inner_wrapper {
+	display: flex;
+	flex-direction: column;
+}
+
+.name {
+	width: 100%;
+	font-size: var(--h5) !important;
+	text-transform: capitalize;
+}
+
+.rating_wrapper {
+	display: flex;
+	align-items: center;
+}
+
+.rating {
+	margin-right: 0.5rem;
+}
+
+.rating_num,
+.count {
+	font-size: 12px;
+}
+
+.count {
+	margin-left: 0.5rem;
+}
+
+.detail_wrapper {
+	margin-top: 1.5rem;
+}
+
+.follow_wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.follow_wrapper button {
+	margin-top: 0.35rem;
+}
+
+.followers_btn {
+	margin-right: 1rem;
+}
+
+.wrapper svg {
+	margin-right: 0.5rem;
+	min-width: 17.5px;
+	max-width: 17.5px;
+}
+
+.location {
+	align-items: flex-start;
+}
+
+.vendor_logo_wrapper {
+	position: relative;
+	padding: 1rem;
+	order: 2;
+}
+
+.vendor_logo {
+	width: 175px;
+	height: 175px;
+}
+
+.vendor_logo img,
+.vendor_logo span {
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-ms-border-radius: 15px;
+	-o-border-radius: 15px;
+	border-radius: 15px;
+}
+
+.bgimg_wrapper img,
+.vendor_logo img {
+	object-fit: contain !important;
+}
+
+.view_btn {
+	position: relative;
+	z-index: 1;
+}
+
+.btns_wrapper button {
+	margin-top: 1rem;
+}
+
+.view_btn svg {
+	min-width: 20px;
+	max-width: 20px;
+}
+
+.loader {
+	margin-left: 0.5rem;
+}
+
+.follow_wrapper {
+	margin-bottom: 0.5rem;
+}
+
+.follow_wrapper button {
+	margin-top: 0.75rem;
+	background-color: var(--new-lite-pink);
+}
+
+.followers_btn {
+	cursor: text;
+}
+
+.followers_btn:hover svg {
+	transform: none !important;
+}
+
+.follow_wrapper button svg {
+	margin-right: 5px;
+	margin-left: 0;
+}
+
+.follow_btn {
+	background-color: var(--white) !important;
+	margin-top: 1rem;
+}
+
+.follow_wrapper button {
+	min-width: 130px;
+	justify-content: center;
+}
+
+/* appointment style */
+.appointment .content_wrapper {
+	flex-direction: column-reverse;
+	justify-content: center;
+	align-items: center;
+}
+
+.appointment .card_content {
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.appointment .btns_wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	width: 100%;
+}
+
+@media all and (max-width: 576px) {
+	.view_btn button {
+		font-size: 12px !important;
+	}
+
+	.content_wrapper {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.card_content:not(.appointment .card_content) {
+		order: 2;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+
+	.vendor_logo_wrapper:not(.appointment .vendor_logo) {
+		order: 1;
+	}
+
+	.follow_wrapper {
+		width: 100%;
+		justify-content: center;
+	}
+
+	.vendor_logo {
+		width: 150px;
+		height: 150px;
+		max-width: 50vw;
+		max-height: 50vw;
+	}
+}
+
+@media all and (max-width: 420px) {
+	.follow_wrapper {
+		flex-direction: column;
+	}
+
+	.followers_btn {
+		margin-right: 0;
+	}
+
+	.appointment .btns_wrapper {
+		flex-direction: column;
+		align-items: center;
+	}
+}

@@ -1,0 +1,87 @@
+.coupon_data_wrapper {
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+.coupon_data {
+	margin-top: 1.75rem;
+	background-color: var(--lite-green);
+	color: var(--green);
+	border: 1px solid var(--green);
+	border-radius: 5px;
+	max-height: 45px;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	max-width: max-content;
+}
+
+.coupon_data span:not(.coupon span):first-of-type {
+	position: relative;
+	padding-right: 0.5rem;
+	border-right: 1px solid var(--green);
+	padding: 0.5rem 0.75rem;
+}
+
+.coupon::before,
+.coupon_data span:not(.coupon span):first-of-type::before {
+	content: '';
+	position: absolute;
+	top: -11px;
+	right: -7.5px;
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	background-color: var(--white);
+	border: 1px solid var(--green);
+}
+
+.coupon::after,
+.coupon_data span:not(.coupon span):first-of-type::after {
+	content: '';
+	position: absolute;
+	top: -11px;
+	right: -7.5px;
+	width: 12px;
+	height: 12px;
+	background-color: var(--white);
+	transform: translateY(-50%);
+	border: 1px dashed var(--white);
+}
+
+.coupon {
+	position: relative;
+	padding: 0.5rem 0.75rem;
+	min-width: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.coupon::after,
+.coupon::before {
+	top: initial;
+	right: initial;
+	bottom: -8px;
+	left: -7.5px;
+}
+
+.coupon::after {
+	transform: translateY(50%);
+}
+
+.coupon span {
+	background-color: var(--green);
+	color: var(--white);
+	border-radius: 4px;
+	padding: 3px 5px;
+}
+
+.apply {
+	position: relative;
+	z-index: 1;
+	margin-top: 0.25rem;
+}

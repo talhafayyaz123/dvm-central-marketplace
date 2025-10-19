@@ -1,0 +1,161 @@
+.small_header_right_wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.underline_links {
+	position: relative;
+	margin-right: 1rem;
+	width: max-content;
+}
+
+.underline_links a {
+	color: var(--new-gray);
+}
+
+.underline_links a:hover {
+	color: var(--lite-dark-primary);
+}
+
+.underline_links a,
+.active_nav a {
+	position: relative;
+	display: flex;
+	align-items: center;
+	padding-top: 0.25rem;
+	padding-bottom: 0.25rem;
+	font-size: 14px;
+}
+
+.underline_links svg {
+	margin-left: 5px;
+}
+
+.active_nav a {
+	color: var(--lite-dark-primary);
+}
+
+.virtual_link {
+	display: flex;
+	align-items: center;
+}
+
+.not_active {
+	color: var(--new-gray) !important;
+}
+
+.not_active:hover {
+	color: var(--lite-dark-primary) !important;
+}
+
+.underline_links a::after,
+.active_nav a::after {
+	content: '';
+	position: absolute;
+	bottom: 0px;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background-color: var(--lite-dark-primary);
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	transform: scale(0);
+	transition: all 0.3s ease-in-out;
+}
+
+.underline_links a:not(.mega_menu_link a):hover::after,
+.active_nav a:not(.mega_menu_link a)::after {
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	-o-transform: scale(1);
+	transform: scale(1);
+}
+
+.virtual_link.active_nav .virtual_link_a::after {
+	transform: scale(1) !important;
+}
+/* .shop_now_btn a::after {
+  width: 0 !important;
+  height: 0 !important;
+} */
+
+.mega_menu {
+	position: absolute;
+	right: 0;
+	top: 1.7rem;
+	width: 200px;
+	transform: scale(0);
+	transform-origin: top right;
+	z-index: 30;
+	background-color: var(--white);
+	padding: 0.5rem 0;
+	box-shadow: 0px 18px 20px 0px rgba(0, 0, 0, 0.15);
+	border-radius: 0.25rem;
+	visibility: hidden;
+}
+
+.mega_buyNow_menu {
+	width: 175px;
+}
+
+.mega_menu .underline_links {
+	margin-right: 0;
+	width: 100%;
+}
+
+.mega_menu .underline_links a {
+	padding: 0.5rem 0.75rem;
+	transition: none;
+}
+
+.mega_menu .underline_links a:hover,
+.mega_menu .active_nav a {
+	background-color: var(--alpha-lite-dark-primary);
+}
+
+.mega_menu .active_nav a::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 5px;
+	z-index: 1 !important;
+	height: 100%;
+	background-color: var(--lite-dark-primary);
+}
+
+.mega_menu_link:hover .mega_menu {
+	visibility: visible;
+	transform: scale(1);
+}
+
+.mega_menu_link:hover a:not(.mega_menu a) {
+	color: var(--lite-dark-primary);
+}
+
+.mega_menu_link:hover svg {
+	transform: rotate(180deg);
+	stroke: var(--lite-dark-primary) !important;
+}
+
+/* .shop_now_btn button {
+  padding: 5px 10px !important;
+} */
+
+@media all and (max-width: 1250px) {
+	.small_header_right_wrapper {
+		display: none;
+	}
+
+	/* .shop_now_btn {
+		margin-right: 0;
+	} */
+}
+
+/* @media all and (max-width: 576px) {
+	.shop_now_btn {
+		display: none;
+	}
+} */

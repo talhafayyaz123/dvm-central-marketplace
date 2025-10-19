@@ -1,0 +1,21 @@
+.info_wrapper {
+	border-radius: 15px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-ms-border-radius: 15px;
+	-o-border-radius: 15px;
+	box-shadow: 0 3px 6px var(--dark-shadow);
+	width: 100%;
+	max-width: 350px;
+	padding: 2rem 1rem;
+	height: max-content;
+	margin-left: 2rem;
+}
+
+@media all and (max-width: 1250px) {
+	.info_wrapper {
+		align-self: center;
+		margin-top: 2rem;
+		margin-left: 0;
+	}
+}

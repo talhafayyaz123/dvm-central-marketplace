@@ -1,0 +1,17 @@
+.loader {
+	width: 25px;
+	height: 25px;
+}
+
+.wishlist_icon {
+	width: 25px;
+	cursor: pointer;
+}
+
+.wishlist_icon:hover {
+	fill: var(--primary);
+}
+
+.added_to_wishlist {
+	fill: var(--primary);
+}

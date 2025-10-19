@@ -1,0 +1,39 @@
+.seller_detail_wrapper {
+	padding-top: 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.space_bet {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 0.5rem;
+	width: 100%;
+}
+
+.sold_text {
+	align-self: flex-start;
+}
+
+.other_ratings_wrapper {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	justify-items: center;
+	text-align: center;
+	margin-top: 0.5rem;
+}
+
+.other_ratings_wrapper div {
+	line-height: 1.2;
+}
+
+.other_ratings_wrapper svg {
+	width: 30px;
+	margin: 0.5rem 0;
+}
+
+.btn {
+	margin-top: 2rem;
+}

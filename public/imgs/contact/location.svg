@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26.747" height="38.222" viewBox="0 0 26.747 38.222">
+  <defs>
+    <radialGradient id="radial-gradient" cx="-0.057" cy="0" r="2.226" gradientTransform="matrix(0.984, 0.179, 0.095, -0.521, -0.001, 0.01)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#bf2ed1"/>
+      <stop offset="0.226" stop-color="#ab45db"/>
+      <stop offset="0.456" stop-color="#9f53e1"/>
+      <stop offset="0.648" stop-color="#9162e7"/>
+      <stop offset="0.833" stop-color="#8571ed"/>
+      <stop offset="1" stop-color="#7286f5"/>
+    </radialGradient>
+  </defs>
+  <path id="Path_8576" data-name="Path 8576" d="M-651.374-179.157c-.421-.49-.835-.959-1.234-1.44a85.345,85.345,0,0,1-6.63-9.033,44.84,44.84,0,0,1-4.246-8.284,19.306,19.306,0,0,1-1.175-4.649,12.923,12.923,0,0,1,1.887-8.419,12.972,12.972,0,0,1,8.916-6.158,13.356,13.356,0,0,1,15.571,10.332,14.287,14.287,0,0,1-.381,7.117,34.753,34.753,0,0,1-3.143,7.22,78.006,78.006,0,0,1-7.968,11.445c-.488.593-.994,1.172-1.493,1.757C-651.293-179.239-651.319-179.214-651.374-179.157Zm4.783-24.986a4.788,4.788,0,0,0-4.931-4.635,4.8,4.8,0,0,0-4.625,4.92,4.783,4.783,0,0,0,4.887,4.633A4.777,4.777,0,0,0-646.59-204.143Z" transform="translate(664.743 217.378)" fill="url(#radial-gradient)"/>
+</svg>

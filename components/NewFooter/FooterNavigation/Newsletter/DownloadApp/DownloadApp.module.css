@@ -1,0 +1,61 @@
+.downlaod_app_container {
+	color: var(--white);
+	width: 100%;
+	margin-top: 1.5rem;
+}
+
+.app_btn_wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	width: 100%;
+}
+
+.downlaod {
+	font-size: var(--h4);
+}
+.icon_wrapper {
+	position: relative;
+	width: 140px;
+	height: 40px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	margin-right: 0.5rem;
+	margin-top: 1rem;
+}
+
+.icon_wrapper:last-of-type {
+	margin-right: 0;
+}
+
+.icon_wrapper:hover {
+	opacity: 0.75;
+	transform: translate(0, -5px) !important;
+	-webkit-transform: translate(0, -5px) !important;
+	-moz-transform: translate(0, -5px) !important;
+	-ms-transform: translate(0, -5px) !important;
+	-o-transform: translate(0, -5px) !important;
+}
+
+@media all and (max-width: 1024px) {
+	.downlaod_app_container {
+		grid-column-start: 2;
+		grid-column-end: 3;
+	}
+}
+
+@media all and (max-width: 768px) {
+	.icon_wrapper {
+		width: 120px;
+		height: 35px;
+	}
+}
+
+@media all and (max-width: 576px) {
+	.downlaod_app_container {
+		grid-column: 1;
+	}
+}

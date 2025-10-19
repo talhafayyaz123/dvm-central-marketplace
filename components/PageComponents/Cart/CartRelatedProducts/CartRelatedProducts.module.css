@@ -1,0 +1,24 @@
+.related_products {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 1rem;
+	margin-top: 2rem;
+}
+
+@media all and (max-width: 1024px) {
+	.related_products {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+@media all and (max-width: 768px) {
+	.related_products {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media all and (max-width: 576px) {
+	.related_products {
+		grid-template-columns: 1fr;
+	}
+}

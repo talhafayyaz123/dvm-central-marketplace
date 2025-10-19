@@ -1,0 +1,29 @@
+.course {
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	position: relative;
+	width: 100%;
+	max-width: 100%;
+}
+
+.course img {
+	max-width: 100% !important;
+}
+
+.dis_price {
+	text-decoration: line-through;
+	color: var(--red);
+}
+
+.info {
+	border-top: 1px solid var(--gray-border);
+	width: 100%;
+	padding-top: 1rem;
+}
+
+.info p {
+	word-break: break-all;
+}

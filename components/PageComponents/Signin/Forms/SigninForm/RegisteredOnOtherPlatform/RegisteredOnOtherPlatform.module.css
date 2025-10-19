@@ -1,0 +1,46 @@
+.allow_container {
+	width: 100%;
+}
+
+.allow_wrapper {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	max-width: 200px;
+	margin-bottom: 0.5rem;
+}
+
+.error {
+	display: flex;
+	align-items: center;
+	background-color: var(--lite-red);
+	color: var(--red);
+	padding: 0.5rem 1rem;
+	border-radius: 7.5px;
+	line-height: 1.3;
+}
+
+.error svg {
+	min-width: 25px;
+	max-width: 25px;
+	margin-right: 0.5rem;
+}
+
+.allow_wrapper {
+	margin-top: 1rem;
+	margin-bottom: 2rem;
+}
+
+.allow_wrapper button:first-of-type {
+	margin-right: 1rem;
+}
+
+.allow_loader {
+	margin-left: 0.5rem;
+}
+
+@media all and (max-width: 576px) {
+	.allow_container {
+		padding: 1rem;
+	}
+}

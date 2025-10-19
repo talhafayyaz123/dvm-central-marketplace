@@ -1,0 +1,60 @@
+.terms_container {
+	position: relative;
+	width: max-content;
+	width: 100%;
+	height: 100%;
+	padding-bottom: 2rem;
+	max-height: 75vh;
+	overflow-y: auto;
+}
+
+.inner_wrapper {
+	margin: 0 5%;
+}
+
+.check_wrapper {
+	display: flex;
+	align-items: center;
+	padding: 0.65rem 5%;
+}
+
+.preferred_box:first-of-type {
+	margin-right: 2rem;
+}
+
+.inner_wrapper {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.fields_wrapper {
+	margin: 1rem 5% 0;
+}
+
+.fields_wrapper .inner_wrapper {
+	margin: 0;
+}
+
+.input {
+	padding: 0.65rem;
+	margin-top: 1rem;
+	border: 1px solid var(--gray-border);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+	width: 100%;
+}
+
+.accept_btn {
+	margin-top: 2rem;
+}
+
+.error_msg {
+	font-size: 14px !important;
+	color: var(--red);
+}

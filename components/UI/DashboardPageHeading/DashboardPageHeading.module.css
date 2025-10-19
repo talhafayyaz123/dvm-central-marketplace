@@ -1,0 +1,13 @@
+.info_heading {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 200px;
+	width: 100%;
+	background-image: linear-gradient(to bottom, #eedaf8, #f0e4fb, #f4edfd, #f9f6fe, #ffffff);
+	padding: 0 2rem;
+	text-align: center;
+}
+.faq_heading{
+	margin-top: -3rem;
+}

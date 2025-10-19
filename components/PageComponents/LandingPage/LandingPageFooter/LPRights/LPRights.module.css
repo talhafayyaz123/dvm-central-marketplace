@@ -1,0 +1,15 @@
+.rights_wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-top: 1px solid var(--gray-border);
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+
+.terms_wrapper span {
+	margin: 0 10px;
+}
+.terms_wrapper a:hover {
+	color: var(--lite-dark-primary);
+}

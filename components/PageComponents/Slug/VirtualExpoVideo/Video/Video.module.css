@@ -1,0 +1,34 @@
+.video_container {
+	/* background-image: linear-gradient(90deg, #c12dd1, #6d8cf8) !important; */
+	background-color: var(--gray-section);
+}
+
+.video_wrapper {
+	position: relative;
+	width: 80%;
+	margin: 0 auto;
+	height: auto;
+	padding-top: 45.25%;
+}
+
+.video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+@media all and (max-width: 1024px) {
+	.video_wrapper {
+		width: 100%;
+		padding-top: 56.25%;
+	}
+}
+
+@media all and (max-height: 600px) and (orientation: landscape) {
+	.video_wrapper {
+		width: 55%;
+		padding-top: 37.25%;
+	}
+}

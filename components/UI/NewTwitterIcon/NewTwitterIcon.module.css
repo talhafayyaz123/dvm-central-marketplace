@@ -1,0 +1,23 @@
+.twitter_icon {
+	width: 31.27px;
+	height: 31.27px;
+	background-color: var(--white);
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.twitter_icon svg {
+	width: 15px;
+	height: 15px;
+	fill: var(--primary);
+}
+
+.share_icon {
+	background-color: var(--primary);
+}
+
+.share_icon svg {
+	fill: var(--white);
+}

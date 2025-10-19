@@ -1,0 +1,108 @@
+.job_detail_container {
+	display: flex;
+	flex-direction: column;
+}
+
+.job_detail_wrapper {
+	margin-top: 1rem;
+	padding: 1rem;
+	padding-bottom: 2rem;
+}
+
+.title_wrapper,
+.info_wrapper,
+.wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.title_wrapper h4,
+.wrapper .icon_wrapper {
+	margin-right: 0.5rem;
+}
+
+.title_wrapper h4,
+.description {
+	word-break: break-word;
+}
+
+.title_wrapper {
+	flex-wrap: nowrap;
+	align-items: flex-start;
+}
+
+.title_wrapper button {
+	min-width: fit-content;
+}
+
+.info_wrapper {
+	justify-content: flex-start;
+	max-width: 800px;
+}
+
+.info_wrapper div {
+	margin-top: 1rem;
+}
+
+.info_wrapper div:not(:last-of-type) {
+	margin-right: 1rem;
+}
+
+.job_time {
+	padding: 0.25rem 0.5rem;
+	-webkit-border-radius: 7.5px;
+	-moz-border-radius: 7.5px;
+	-ms-border-radius: 7.5px;
+	-o-border-radius: 7.5px;
+	border-radius: 7.5px;
+}
+
+.icon_wrapper svg {
+	min-width: 25px;
+	max-width: 25px;
+	margin-right: 0.5rem;
+}
+
+.icon_wrapper {
+	display: flex;
+	align-items: center;
+}
+
+.hiring .icon_wrapper,
+.hiring .validity {
+	margin-top: 1rem;
+}
+
+.hiring {
+	border-bottom: 1px solid var(--gray-border);
+	padding-bottom: 1rem;
+	margin-bottom: 2rem;
+}
+
+.description {
+	margin-top: 0.5rem;
+}
+
+.requirment {
+	margin-top: 2rem;
+}
+
+.requirment li {
+	list-style: disc !important;
+	margin-left: 2rem;
+	margin-top: 0.75rem;
+}
+
+@media screen and (max-width: 576px) {
+	.job_detail_container .wrapper,
+	.title_wrapper {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.title_wrapper button {
+		margin-top: 1rem;
+	}
+}

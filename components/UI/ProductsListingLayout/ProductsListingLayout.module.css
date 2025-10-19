@@ -1,0 +1,26 @@
+.hero_banner {
+	color: white !important;
+}
+
+/* .imgWidth {
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+} */
+
+/* .imgWidth img {
+	width: 525px !important;
+} */
+
+.title {
+	font-size: var(--h4);
+}
+
+.deals_wrapper {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1rem;
+}
+
+.single_col {
+	grid-column: 1 / 5;
+}

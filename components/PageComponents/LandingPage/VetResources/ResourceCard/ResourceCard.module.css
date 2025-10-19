@@ -1,0 +1,138 @@
+.resource_card {
+	position: relative;
+	background-color: #e9ebf7;
+	padding: 15px;
+	padding-bottom: 50px;
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	-ms-border-radius: 20px;
+	-o-border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	isolation: isolate;
+}
+
+.resource_card:hover {
+	background-color: var(--white);
+	box-shadow: 0px 25px 38px 0px rgb(43 1 68 / 17%);
+}
+
+.resource_card:hover .icon_wrapper::before {
+	display: block;
+	opacity: 1;
+	animation: rotate 1.8s linear reverse infinite;
+	-webkit-animation: rotate 1.8s linear reverse infinite;
+}
+
+.resource_card:hover .icon_wrapper::after {
+	display: block;
+	opacity: 1;
+	animation: rotate 1.2s linear reverse infinite;
+	-webkit-animation: rotate 1.2s linear reverse infinite;
+}
+
+.icon_wrapper {
+	position: relative;
+	z-index: 1;
+	background-color: var(--white);
+	width: 98px;
+	height: 98px;
+	border-radius: 25px;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	-ms-border-radius: 25px;
+	-o-border-radius: 25px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: -0.707px 0.707px 10px 0px rgb(43 1 68 / 10%);
+}
+
+.icon_wrapper::before,
+.icon_wrapper::after {
+	content: '';
+	z-index: -2;
+	border-radius: 30%;
+	mix-blend-mode: multiply;
+	height: 110px;
+	opacity: 0;
+	left: 0px;
+	top: 0px;
+	width: 110px;
+	position: absolute;
+	display: none;
+}
+
+.icon_wrapper::before {
+	background-color: #33f1ff;
+}
+
+.icon_wrapper::after {
+	background-color: #e933ff;
+}
+
+.icon_bg {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	background-color: #fff;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	border-radius: 25px;
+}
+
+@keyframes rotate {
+	0% {
+		top: -10px;
+		left: -10px;
+	}
+	25% {
+		top: 0px;
+		left: 0px;
+	}
+	50% {
+		top: 0px;
+		left: 0px;
+	}
+	75% {
+		top: 5px;
+		left: 5px;
+	}
+	100% {
+		top: -10px;
+		left: -10px;
+	}
+}
+
+.icon_wrapper img {
+	width: 70px !important;
+	height: 70px !important;
+}
+
+.title {
+	margin-top: 2rem;
+	margin-bottom: 0.75rem;
+}
+
+.button {
+	position: absolute;
+	bottom: -20px;
+	left: 50%;
+	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.button button {
+	padding-top: 7.5px;
+	padding-bottom: 7.5px;
+}

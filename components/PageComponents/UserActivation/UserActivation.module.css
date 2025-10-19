@@ -1,0 +1,17 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	min-height: 60vh;
+}
+
+.container h3 {
+	margin-top: 2rem;
+	margin-bottom: 1rem;
+}
+
+.container svg {
+	width: 200px;
+}

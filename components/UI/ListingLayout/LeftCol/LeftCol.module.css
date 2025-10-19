@@ -1,0 +1,24 @@
+.left_col {
+	grid-column: 1;
+	border: 1px solid var(--gray-border);
+	border-radius: 15px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-ms-border-radius: 15px;
+	-o-border-radius: 15px;
+	height: max-content;
+	order: 1;
+	min-width: 300px;
+}
+
+@media all and (max-width: 1024px) {
+	.left_col {
+		order: 2;
+	}
+}
+
+@media all and (max-width: 1024px) {
+	.left_col {
+		min-width: initial;
+	}
+}

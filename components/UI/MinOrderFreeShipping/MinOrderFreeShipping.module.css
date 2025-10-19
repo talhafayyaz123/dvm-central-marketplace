@@ -1,0 +1,12 @@
+.free_shipping_order {
+	width: 100%;
+	max-width: max-content;
+	margin-top: 1.5rem;
+	color: var(--white) !important;
+	margin-bottom: 1rem;
+	text-align: left;
+}
+
+.free_shipping_order:hover {
+	background-image: linear-gradient(to right, #bf2ed1, #b937d5, #b33fd8, #ad46db, #a74cde, #a054e2, #9a5be6, #9362e9, #8a6cee, #8176f1, #797ef3, #7286f5);
+}

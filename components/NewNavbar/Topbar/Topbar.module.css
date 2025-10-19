@@ -1,0 +1,81 @@
+.top_bar_container {
+	background-color: var(--lite-dark-primary);
+	padding: 0;
+}
+
+.top_bar_wrapper {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.social_links_wrapper {
+	display: flex;
+	align-items: center;
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+}
+
+.social_links_wrapper a {
+	margin-right: 1rem;
+	display: flex;
+	align-items: center;
+}
+
+.social_links_wrapper a:hover {
+	opacity: 0.75;
+	transform: translateY(-3px);
+}
+.font_color {
+	color: white;
+	margin-right: 1rem;
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+}
+.support_message {
+	margin-left: 0.5rem;
+}
+
+.call_icon_wrapper {
+	display: flex;
+	align-items: center;
+	font-size: 12px;
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+}
+
+.call_icon_wrapper svg {
+	margin-right: 10px;
+	width: 17.88px;
+}
+
+.call_icon_wrapper:hover span {
+	opacity: 0.75;
+}
+
+.call_icon_wrapper:hover svg {
+	transform: translateY(-3px);
+}
+
+.twitter_icon {
+	width: 18.88px !important;
+	height: 18.88px !important;
+}
+
+.twitter_icon svg {
+	width: 10px !important;
+	height: 10px !important;
+}
+
+.youtube_icon {
+	width: 18.88px !important;
+	height: 18.88px !important;
+	padding: 3px;
+}
+
+@media all and (max-width: 576px) {
+	.call_icon_wrapper svg {
+		width: 15px;
+	}
+}

@@ -1,0 +1,25 @@
+.grid_icon_wrapper,
+.col_icon_wrapper {
+	padding: 0.5rem;
+	border-radius: 7.5px;
+	-webkit-border-radius: 7.5px;
+	-moz-border-radius: 7.5px;
+	-ms-border-radius: 7.5px;
+	-o-border-radius: 7.5px;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+}
+
+.grid_icon_wrapper svg path,
+.col_icon_wrapper svg path {
+	transition: all 0.3s ease-in-out;
+}
+
+.grid_icon_wrapper {
+	margin-right: 1rem;
+}
+
+.grid_icon_wrapper:hover,
+.col_icon_wrapper:hover {
+	border-color: var(--primary) !important;
+}

@@ -1,0 +1,22 @@
+.signin_wrapper {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 4rem;
+}
+
+/* .bg_shape_wrapper {
+	position: absolute;
+	top: -17rem;
+	right: -10rem;
+} */
+
+.terms_wrapper {
+	max-height: 80vh;
+	overflow-y: auto;
+}
+
+@media all and (max-width: 1024px) {
+	.signin_wrapper {
+		grid-template-columns: 1fr;
+	}
+}

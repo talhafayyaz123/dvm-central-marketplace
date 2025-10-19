@@ -1,0 +1,33 @@
+.additional_info {
+	display: grid;
+	grid-template-columns: 1fr;
+	border: 1px solid var(--gray-border);
+	margin-top: 1rem;
+}
+
+.wrapper {
+	display: flex;
+	align-items: center;
+	border-bottom: 1px solid var(--gray-border);
+}
+
+.wrapper:last-of-type {
+	border-bottom: none;
+}
+
+.title {
+	background-color: var(--gray-section);
+	padding: 0.75rem;
+	width: 50%;
+	display: flex;
+	align-items: center;
+	align-self: stretch;
+}
+
+.info {
+	padding: 0.75rem;
+	width: 50%;
+	line-height: 1.2;
+	font-size: var(--p);
+	font-family: 'poppins-r';
+}

@@ -1,0 +1,141 @@
+.related_product_card {
+	position: relative;
+	-webkit-border-radius: 0.5rem;
+	-moz-border-radius: 0.5rem;
+	-ms-border-radius: 0.5rem;
+	-o-border-radius: 0.5rem;
+	border-radius: 0.5rem;
+	/* padding: 0.75rem; */
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+	text-align: left;
+	z-index: 1;
+	cursor: pointer;
+	padding-bottom: 1.5rem;
+}
+
+.info {
+	width: 100%;
+}
+
+.wish {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	z-index: 10;
+}
+
+.img_wrapper {
+	display: flex;
+	justify-content: center;
+	border: 1px solid var(--gray-border);
+	padding: 0.25rem;
+	background-color: var(--white);
+}
+
+.name {
+	margin-top: 1rem;
+	line-height: 1.5;
+	font-family: 'poppins-sb';
+}
+
+.sku {
+	color: var(--red);
+}
+
+.price_rating {
+	display: flex;
+	flex-direction: column;
+	margin-top: 0.5rem;
+	width: 100%;
+}
+
+button.price {
+	padding: 0;
+	background-color: transparent;
+	font-size: 14px !important;
+}
+
+.request_loader {
+	margin-left: 0.5rem;
+}
+
+.price {
+	color: var(--primary);
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	font-family: 'poppins-sb';
+}
+
+.price span:first-of-type {
+	margin-right: 0.5rem;
+}
+
+.price span:nth-of-type(2) {
+	color: var(--lite-black);
+	margin-right: 0.5rem;
+	text-decoration: line-through;
+}
+
+.price span:not(:first-of-type) {
+	font-family: 'poppins-r';
+	font-size: var(--p);
+}
+
+.price span:last-of-type {
+	color: var(--red);
+}
+
+.loader {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.special_price {
+	margin-top: 0.25rem;
+	width: max-content;
+	max-width: 100%;
+	color: var(--green);
+	border-radius: 5px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	font-size: 14px !important;
+}
+
+.special_price span {
+	margin-top: 0.15rem;
+}
+
+/* cart and eye icon */
+.eye_wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 0.75rem;
+}
+
+.eye_icon {
+	width: 30px !important;
+	height: 30px;
+	cursor: pointer;
+}
+
+.shop {
+	padding: 0.25rem 0.5rem;
+	border-radius: 7.5px;
+	background-color: var(--primary);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	height: max-content;
+}
+
+.shop svg {
+	width: 17px;
+}

@@ -1,0 +1,87 @@
+.wave_wrapper {
+	overflow: hidden;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	z-index: 0;
+	margin: auto;
+}
+
+/* .wave_wrapper::after {
+	position: absolute;
+	content: '';
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-image: url('/imgs/wave/bl-shape.png');
+	z-index: -1;
+} */
+
+/* .wave_wrapper_inner {
+	position: absolute;
+	width: 100%;
+	overflow: hidden;
+	height: 100%;
+	bottom: -1px;
+}
+
+.wave {
+	position: absolute;
+	left: 0;
+	width: 200%;
+	height: 100%;
+	background-repeat: repeat no-repeat;
+	background-position: 0 bottom;
+	transform-origin: center bottom;
+}
+
+.bgMiddle {
+	z-index: 1;
+	opacity: 0.5;
+}
+
+.bgBottom {
+	z-index: 1;
+	opacity: 1;
+}
+
+.waveMiddle {
+	background-image: url('/imgs/wave/b-shapemiddle.png');
+	background-size: 100% 130px;
+}
+
+.waveBottom {
+	background-image: url('/imgs/wave/b-shapedown.png');
+	background-size: 100% 100px;
+}
+
+.graywaveBottom {
+	background-image: url('/imgs/wave/b-shapedown-gray.png');
+	background-size: 100% 100px;
+}
+
+.waveMiddle {
+	animation: move_wave 20s alternate infinite;
+	-webkit-animation: move_wave 20s alternate infinite;
+}
+
+.graywaveBottom,
+.waveBottom {
+	animation: move_wave 15s alternate infinite;
+	-webkit-animation: move_wave 15s alternate infinite;
+}
+
+@keyframes move_wave {
+	0% {
+		transform: translateX(0) translateZ(0) scaleY(1);
+	}
+	50% {
+		transform: translateX(-25%) translateZ(0) scaleY(0.55);
+	}
+	100% {
+		transform: translateX(-50%) translateZ(0) scaleY(1);
+	}
+} */

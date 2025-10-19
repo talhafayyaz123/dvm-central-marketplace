@@ -1,0 +1,69 @@
+.inner_wrapper {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+
+/* .inner_wrapper span {
+	color: var(--red);
+} */
+
+.input {
+	padding: 0.65rem;
+	border: 1px solid var(--gray-border);
+	width: 100%;
+	margin-top: 0.75rem;
+	border-radius: 5px;
+}
+
+.input::placeholder {
+	font-size: 12px;
+}
+
+.btn {
+	width: max-content;
+	height: max-content;
+}
+
+.error_msg {
+	font-size: 14px !important;
+	color: var(--red);
+}
+
+.submit_loader {
+	margin-left: 1rem;
+}
+
+.btn:disabled {
+	cursor: not-allowed;
+}
+
+.btn {
+	margin-top: 2rem;
+}
+
+.hide_forgot_form {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+.forgot_form h4 {
+	margin-top: 2.5rem;
+}
+
+.forgot_form form {
+	margin-top: 1rem;
+}
+
+.reset_msg {
+	margin-top: 1rem;
+}
+
+/* .heading {
+	margin-top: 1.5rem !important;
+} */

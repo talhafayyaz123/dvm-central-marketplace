@@ -1,0 +1,43 @@
+.intro_vetandtech {
+	position: relative;
+}
+
+.heading_container h2 {
+	max-width: 700px;
+}
+
+.img_wrapper {
+	position: absolute;
+}
+
+.img_1 {
+	bottom: 2.5%;
+	left: 0;
+	width: 35%;
+}
+
+.img_2 {
+	top: 5%;
+	right: 0;
+	width: 40%;
+}
+
+@media all and (max-width: 768px) {
+	.img_1 {
+		width: 45%;
+	}
+
+	.img_2 {
+		width: 50%;
+	}
+}
+
+@media all and (max-width: 576px) {
+	.img_1 {
+		width: 65%;
+	}
+
+	.img_2 {
+		width: 70%;
+	}
+}

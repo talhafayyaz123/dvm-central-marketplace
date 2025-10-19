@@ -1,0 +1,424 @@
+.check_wrapper {
+	padding: 1rem;
+	width: 100%;
+	text-align: center;
+}
+
+.check_wrapper h4 {
+	margin-top: 1rem;
+}
+
+.form_container {
+	position: relative;
+	padding: 1rem;
+	width: 100%;
+	max-height: 80vh;
+	overflow: hidden;
+	overflow-y: auto;
+}
+
+.video_wrapper {
+	position: relative;
+	display: inline-flex;
+	padding: 0 1rem;
+	z-index: 5;
+}
+
+.video_text {
+	margin-right: 1rem;
+	line-height: 1.3;
+}
+
+.video_text span {
+	display: inline-block;
+}
+
+.title {
+	text-align: center;
+	padding: 1rem 0;
+	margin: 1rem;
+	margin-bottom: 0;
+}
+
+.img_2 {
+	position: absolute;
+	top: 5%;
+	right: 0;
+	width: 35%;
+}
+
+.form_wrapper {
+	position: relative;
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 2rem;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-ms-border-radius: 15px;
+	-o-border-radius: 15px;
+	border-radius: 15px;
+	padding: 1rem;
+	padding-bottom: 2rem;
+	max-width: 100%;
+	margin-top: 1rem;
+	z-index: 1;
+}
+
+.fieldset {
+	width: 100%;
+	padding: 1rem;
+	padding-top: 2rem;
+	border-radius: 5px;
+}
+
+.fieldset:not(:first-of-type) {
+	margin-top: 2rem;
+}
+
+.fieldset legend {
+	background-color: var(--primary);
+	color: var(--white);
+	padding: 0.5rem;
+	border-radius: 5px;
+}
+
+.wrapper {
+	position: relative;
+}
+
+.veterinarian_or_not,
+.license_wrapper,
+.wrapper {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	row-gap: 2rem;
+	column-gap: 1.5rem;
+}
+
+.checkbox_wrapper {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	column-gap: 1rem;
+	margin-bottom: 1rem;
+}
+
+.sec_checkbox {
+	margin-top: -2rem;
+}
+
+.sec_checkbox .checkbox {
+	margin: 0;
+}
+
+.inner_wrapper {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.inner_wrapper span {
+	color: var(--red);
+}
+
+.comments_register {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 2rem;
+}
+
+.input,
+.textarea {
+	margin-top: 1rem;
+}
+
+.textarea,
+.input {
+	padding: 0.65rem;
+	border: 1px solid var(--gray-border);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+	width: 100%;
+}
+
+.input::placeholder {
+	font-size: 12px;
+}
+
+.textarea {
+	height: 125px;
+	overflow: auto;
+}
+
+.btn {
+	width: max-content;
+	height: max-content;
+	margin-bottom: 2rem;
+	margin-left: 1rem;
+}
+
+.error_msg {
+	font-size: 14px !important;
+	color: var(--red);
+}
+
+.msg_error_msg {
+	top: 1rem;
+	transform: translateY(0);
+}
+
+.submit_loader {
+	margin-left: 1rem;
+}
+
+.form_notify {
+	position: fixed;
+	top: 6rem;
+	right: 1rem;
+	padding: 0.75rem 1rem;
+	z-index: 10;
+	border-radius: 5px;
+	min-width: 150px;
+	transform: translateX(100%);
+	opacity: 0;
+	transition: all 1s cubic-bezier(0.87, -0.41, 0.19, 1.44) !important;
+}
+
+.show_notify {
+	opacity: 1;
+	transform: translateX(0);
+}
+
+.select {
+	margin-top: 1rem;
+	position: relative;
+}
+
+.fill_form {
+	color: var(--red);
+}
+
+.address_input {
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+
+.select_input {
+	padding-top: 0.75rem;
+}
+
+.licence_note {
+	margin-top: 0.5rem;
+	font-size: 12px;
+	color: var(--gray);
+	line-height: 1.3;
+}
+
+.upcoming_container {
+	margin-top: 1rem;
+	border: 1px solid var(--gray-border);
+	padding: 0.75rem;
+	border-radius: 5px;
+	max-height: 125px;
+	overflow-y: auto;
+}
+
+.disabled {
+	opacity: 0.5;
+	cursor: not-allowed;
+}
+
+.checkmark_wrapper {
+	display: flex;
+	align-items: center;
+	margin-bottom: 12px;
+	opacity: 0.75;
+	cursor: not-allowed;
+}
+
+.checkmark {
+	position: relative;
+	background-color: #8571ed;
+	min-width: 18px;
+	max-width: 18px;
+	height: 18px;
+	text-align: center;
+	border-radius: 5px;
+	margin-right: 18px;
+}
+
+.checkmark:after {
+	position: absolute;
+	content: '\2713';
+	font-size: 12.5px;
+	color: #fff;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 5;
+}
+
+.note {
+	margin-top: -1rem !important;
+	border-bottom: 1px solid var(--primary);
+	max-width: max-content;
+}
+
+.not_authorize {
+	max-width: 550px;
+	margin-top: -3rem;
+}
+
+.not_authorize svg {
+	width: 60% !important;
+}
+
+.not_authorize a {
+	margin-bottom: 2rem !important;
+}
+
+.msg_wrapper {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	padding: 2rem;
+}
+
+.msg {
+	max-width: 100%;
+	margin-bottom: 0;
+}
+
+.non_vet_note {
+	margin-top: 2rem !important;
+}
+
+.vet_or_nonvet {
+	font-size: 14px !important;
+	margin-top: -2rem;
+}
+
+.hide_data {
+	opacity: 0;
+	position: absolute;
+	z-index: -1;
+}
+
+.show_data {
+	position: relative !important;
+	opacity: 1 !important;
+	z-index: 1 !important;
+}
+
+.fix_all {
+	font-size: 14px !important;
+	margin-left: 1rem;
+	margin-bottom: 2rem;
+}
+
+.custom_select {
+	margin-bottom: 1rem;
+}
+
+@media all and (max-width: 768px) {
+	.form_wrapper {
+		width: 100%;
+	}
+}
+
+@media all and (max-width: 576px) {
+	.img_2 {
+		position: absolute;
+		top: 5%;
+		right: 0;
+		width: 60%;
+	}
+
+	.fieldset {
+		padding: 0.5rem;
+		padding-top: 1.5rem;
+	}
+
+	.license_wrapper,
+	.form_wrapper {
+		padding: 1rem;
+	}
+
+	.form_wrapper {
+		padding: 0;
+		padding-bottom: 2rem;
+		margin-top: 1rem;
+	}
+
+	.address_input {
+		grid-column-start: initial !important;
+		grid-column-end: initial !important;
+	}
+
+	.input:not(:first-of-type),
+	.textarea {
+		margin-top: 1rem;
+	}
+
+	.input,
+	.textarea {
+		padding: 0.5rem;
+	}
+
+	.sec_checkbox {
+		margin-top: -3rem;
+	}
+
+	.comments_register,
+	.veterinarian_or_not,
+	.license_wrapper,
+	.license_wrapper,
+	.wrapper {
+		grid-template-columns: 1fr;
+		gap: 1.5rem;
+	}
+
+	.license_wrapper {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.hide {
+		display: none;
+	}
+
+	.not_authorize svg {
+		width: 80% !important;
+	}
+
+	.msg_wrapper {
+		padding: 2rem 1rem;
+	}
+
+	.video_wrapper {
+		padding: 0;
+	}
+}
+
+@media all and (max-width: 380px) {
+	.checkbox_wrapper {
+		grid-template-columns: 1fr;
+	}
+
+	.sec_checkbox {
+		margin-top: -2rem;
+	}
+
+	.checkbox {
+		margin: 0;
+		margin-top: 1rem !important;
+	}
+
+	.sec_checkbox .checkbox:last-of-type {
+		margin-top: 0.5rem !important;
+	}
+}

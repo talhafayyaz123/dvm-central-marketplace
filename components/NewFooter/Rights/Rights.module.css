@@ -1,0 +1,39 @@
+.copy_right_container {
+	border-top: 1px solid var(--gray-icon);
+}
+
+.copy_right_wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: var(--p);
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	text-align: center;
+}
+
+.tech_logo {
+	display: flex;
+	align-items: center;
+}
+
+.tech_logo a {
+	margin-left: 0.5rem;
+	display: flex;
+}
+
+.tech_logo span {
+	padding-top: 4px;
+}
+
+@media all and (max-width: 1250px) {
+	.copy_right_container {
+		margin-bottom: 60px;
+	}
+}
+
+@media all and (max-width: 768px) {
+	.copy_right_container {
+		margin-bottom: 50px;
+	}
+}

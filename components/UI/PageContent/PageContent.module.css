@@ -1,0 +1,16 @@
+.content_wrapper {
+	margin-bottom: -3rem;
+	position: relative;
+	z-index: 2;
+}
+
+.content_wrapper p {
+	margin-top: 0.75rem;
+	color: var(--gray);
+}
+
+@media all and (max-width: 576px) {
+	.content_wrapper h4 {
+		text-align: center;
+	}
+}

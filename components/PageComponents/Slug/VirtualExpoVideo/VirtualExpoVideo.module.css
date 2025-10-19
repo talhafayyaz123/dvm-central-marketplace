@@ -1,0 +1,77 @@
+.loader {
+	min-height: 70vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.show_quiz {
+	opacity: 1;
+}
+
+.hide_quiz {
+	opacity: 0;
+}
+
+.download_container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.progress_bar_wrapper {
+	position: relative;
+	width: 100%;
+	padding: 0;
+	background-color: var(--gray-section);
+	display: flex;
+	border-radius: 5px;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+.bar {
+	z-index: 0;
+	height: 20px;
+	background-color: var(--new-lite-pink);
+	overflow: hidden;
+	border-radius: 5px;
+	position: relative;
+}
+
+.percentage {
+	position: absolute;
+	top: 2px;
+	z-index: 2;
+}
+
+.less_than {
+	color: var(--lite-black);
+	right: 10px;
+}
+
+.more_than {
+	color: var(--lite-black);
+	left: 10px;
+}
+
+.download_btn {
+	margin-top: 1rem;
+}
+
+.video_quiz_container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.note {
+	font-size: var(--h5) !important;
+	text-align: center;
+	max-width: 570px;
+	line-height: 1.3;
+	margin: 0 auto;
+	margin-top: 3rem;
+}

@@ -1,0 +1,105 @@
+.lp_hero {
+	background-image: linear-gradient(to right, #c12dd1, #6d8cf8) !important;
+}
+
+.lp_hero_wrapper {
+	position: relative;
+	z-index: 5;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 2rem;
+	align-content: center;
+}
+
+.text_wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.changing_text_container {
+	position: relative;
+	display: block;
+	margin-top: 0.5rem;
+}
+
+.changing_text_wrapper {
+	display: block;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	overflow: hidden;
+	line-height: 1.3;
+}
+
+.shop_btn {
+	margin-top: 3rem;
+	background-color: #ff00d6;
+	border-radius: 50px;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	-ms-border-radius: 50px;
+	-o-border-radius: 50px;
+	display: inline-block;
+	width: max-content;
+}
+
+.shop_btn button {
+	background-color: transparent;
+	display: inline-block;
+}
+
+.shop_btn:hover {
+	opacity: 0.75;
+}
+
+.shop_btn span {
+	margin-left: 0.25rem;
+}
+
+.lp_hero_imgs_container {
+	position: relative;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+
+.img_wrapper:not(:first-of-type) {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.img_wrapper:not(:first-of-type),
+.changing_text_wrapper:not(.relative) {
+	opacity: 0;
+}
+
+.relative {
+	position: relative;
+}
+
+.img_wrapper {
+	width: 80%;
+	display: inline-block;
+}
+
+@media all and (max-width: 1024px) {
+	.lp_hero_wrapper {
+		grid-template-columns: 1fr;
+		justify-items: center;
+		align-content: center;
+	}
+
+	.text_wrapper {
+		text-align: center;
+		align-items: center;
+	}
+
+	.lp_hero_imgs_container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 3rem;
+	}
+}

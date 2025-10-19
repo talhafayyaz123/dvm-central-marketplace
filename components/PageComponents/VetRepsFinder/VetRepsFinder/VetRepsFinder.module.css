@@ -1,0 +1,116 @@
+.loader_wrapper {
+	height: 75vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.hero_image_wrapper {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.hero_image_wrapper img {
+	object-fit: cover;
+}
+
+.image_card {
+	max-width: 500px;
+	padding: 2rem;
+	border-top-right-radius: 105px;
+	background-color: rgba(255, 255, 255, 0.8);
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+	position: relative;
+	z-index: 2;
+}
+
+.wrapper {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 3rem;
+	text-align: center;
+}
+
+.wrapper p {
+	margin-top: 0.5rem;
+}
+
+.main_wrapper {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 2rem;
+}
+
+.icon_wrapper {
+	padding: 1rem;
+	width: 90px;
+	height: 90px;
+	margin: 0 auto 2rem auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.icon_wrapper svg {
+	width: 40px;
+	height: 40px;
+}
+
+.image_wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@media all and (max-width: 1024px) {
+	.wrapper {
+		gap: 1rem;
+	}
+
+	.main_wrapper {
+		grid-template-columns: 1fr;
+		gap: 3rem;
+	}
+
+	.platform .image_wrapper {
+		margin-top: -1.5rem;
+	}
+
+	.post_jobs .image_wrapper {
+		order: 2;
+	}
+}
+
+@media all and (max-width: 768px) {
+	.wrapper {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.step:last-of-type {
+		transform: translateX(50%);
+		margin-right: -0.5rem;
+	}
+}
+
+@media all and (max-width: 576px) {
+	.wrapper {
+		grid-template-columns: 1fr;
+		gap: 3rem;
+	}
+
+	.icon_wrapper {
+		margin-bottom: 1.5rem;
+	}
+
+	.step:last-of-type {
+		transform: translateX(0%);
+		margin-right: 0;
+	}
+	.step {
+		margin: 0 1rem;
+	}
+}

@@ -1,0 +1,18 @@
+.right_col {
+	grid-column-start: 4;
+	grid-column-end: 5;
+	min-width: 300px;
+}
+
+@media all and (max-width: 1024px) {
+	.right_col {
+		grid-column: 1;
+		min-width: initial;
+	}
+
+	.right_col {
+		min-width: initial;
+		margin-top: 3rem;
+		max-width: 400px;
+	}
+}

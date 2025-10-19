@@ -1,0 +1,39 @@
+.profile_wrapper {
+	position: absolute;
+	top: 2.25rem;
+	right: 0;
+	min-width: 190px;
+	max-width: 190px;
+	width: 100%;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+}
+
+.profile_link_wrapper {
+	padding: 0.5rem 0;
+}
+
+.profile_link {
+	background-color: transparent !important;
+	padding: 0.5rem 1rem;
+	width: 100%;
+	cursor: pointer;
+	color: var(--gray) !important;
+	transition: all 0s !important;
+}
+
+.profile_link:hover {
+	color: var(--primary) !important;
+	background-color: var(--new-lite-pink) !important;
+}
+
+.show_profile_menu {
+	transform: scale(1) !important;
+	-webkit-transform: scale(1) !important;
+	-moz-transform: scale(1) !important;
+	-ms-transform: scale(1) !important;
+	-o-transform: scale(1) !important;
+}

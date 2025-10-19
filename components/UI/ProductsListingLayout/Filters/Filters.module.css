@@ -1,0 +1,71 @@
+.search_wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-radius: 5px;
+	margin-top: 1rem;
+	padding: 0.5rem;
+	outline: none;
+}
+
+.focus_border {
+	border: 1px solid var(--primary);
+}
+
+.input {
+	width: 100%;
+}
+
+.no_data {
+	margin-top: .5rem;
+	margin-left: .25rem;
+}
+
+.search_wrapper svg {
+	width: 20px;
+	margin-left: 0.5rem;
+}
+
+.prices_filters,
+.brands_filters {
+	max-height: 400px !important;
+	overflow-y: auto !important;
+	padding: 1rem !important;
+	padding-top: 0 !important;
+}
+
+.wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	border-bottom: 1px solid var(--gray-border);
+	padding: 1rem;
+}
+
+.wrapper button {
+	padding: 0;
+	background-color: transparent;
+	color: var(--primary);
+}
+
+.btn {
+	padding: 0;
+	background-color: transparent;
+	color: var(--primary);
+	font-size: var(--p);
+	margin-top: 1.5rem;
+}
+
+.hide_btn {
+	display: none;
+}
+
+@media all and (max-width: 1024px) {
+	.prices_filters,
+	.brands_filters {
+		max-height: initial !important;
+		overflow: hidden !important;
+		background-color: var(--white) !important;
+	}
+}

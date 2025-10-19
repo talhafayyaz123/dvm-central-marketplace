@@ -1,0 +1,156 @@
+.todays_deals {
+	position: relative;
+}
+
+.deals_inner_container {
+	position: relative;
+	z-index: 3;
+}
+
+.main_bg_img {
+	z-index: -1 !important;
+}
+
+.todays_deals_heading {
+	color: var(--black);
+	position: relative;
+}
+
+.todays_deals_heading p {
+	color: var(--lite-black);
+}
+
+.deals_wrapper {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 2rem;
+}
+
+.main_bg_img,
+.bg_img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+}
+
+.main_bg_img img,
+.bg_img img {
+	border-radius: 15px;
+}
+
+.deals_wrapper_1_2 {
+	position: relative;
+	grid-row-start: 1;
+	grid-row-end: 3;
+	width: 90%;
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 1rem;
+}
+
+.deals_wrapper_5_6,
+.deals_wrapper_3_4 {
+	position: relative;
+	grid-column-start: 2;
+	grid-column-end: 4;
+	width: 110%;
+	margin-left: -10%;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 0.5rem;
+}
+
+.deals_wrapper_1_2::before,
+.deals_wrapper_5_6::before,
+.deals_wrapper_3_4::before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 2px;
+	height: 70%;
+	background-color: var(--primary);
+	z-index: 1;
+}
+
+.deals_wrapper_1_2::before {
+	width: 70%;
+	height: 2px;
+	opacity: 0.5;
+}
+
+.deals_wrapper_3_4::before {
+	background-color: var(--new-lite-purple);
+}
+
+.deals_wrapper_5_6::before {
+	background-color: var(--yellow);
+	opacity: 0.4;
+}
+
+.deals_btn {
+	margin-top: 2rem;
+	display: flex;
+	justify-content: center;
+}
+
+@media all and (max-width: 1024px) {
+	.deals_wrapper {
+		row-gap: 1rem;
+		column-gap: 0;
+		grid-template-columns: 1fr;
+	}
+
+	.deals_wrapper_1_2 {
+		grid-row: 1;
+		width: 100%;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 0.5rem;
+	}
+
+	.deals_wrapper_5_6,
+	.deals_wrapper_3_4 {
+		grid-column-start: 1;
+		grid-column-end: 3;
+		width: 100%;
+		margin-left: 0;
+	}
+
+	.deals_wrapper_1_2::before {
+		width: 2px;
+		height: 70%;
+		margin-top: 0;
+	}
+}
+
+@media all and (max-width: 768px) {
+	.todays_deals {
+		background-size: 100% 750px;
+	}
+
+	.img_wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 1rem;
+	}
+}
+
+@media all and (max-width: 480px) {
+	.deals_wrapper_1_2,
+	.deals_wrapper_3_4,
+	.deals_wrapper_5_6 {
+		grid-template-columns: 1fr;
+	}
+
+	.deals_wrapper_1_2::before,
+	.deals_wrapper_5_6::before,
+	.deals_wrapper_3_4::before {
+		width: 200px;
+		height: 1px;
+	}
+}

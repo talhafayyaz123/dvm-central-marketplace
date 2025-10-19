@@ -1,0 +1,28 @@
+.new_arrivals {
+	position: relative;
+}
+
+.heading_wrapper {
+	position: relative;
+	text-align: center;
+	z-index: 1;
+}
+
+.new_arrivals_wrapper {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 1rem;
+}
+
+@media all and (max-width: 1024px) {
+	.new_arrivals_wrapper {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 1rem;
+	}
+}
+
+@media all and (max-width: 576px) {
+	.new_arrivals_wrapper {
+		grid-template-columns: 1fr;
+	}
+}

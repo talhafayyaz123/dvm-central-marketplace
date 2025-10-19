@@ -1,0 +1,61 @@
+.card_wrapper {
+	position: relative;
+}
+
+.card {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.vendor {
+	/* border: 1px solid var(--gray-border); */
+	margin: 0.5rem 0;
+	overflow: hidden;
+}
+
+.vendor img {
+	padding: 1rem !important;
+}
+
+.slider_btn {
+	background-color: var(--primary);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 10px;
+	position: absolute;
+	top: 0;
+	z-index: 10;
+	opacity: 0.9;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.slider_btn svg {
+	width: 40px;
+	height: 40px;
+	border-radius: 10px;
+	padding: 0.7rem;
+	position: relative;
+	left: auto;
+	right: auto;
+	cursor: pointer;
+}
+
+.slider_btn:first-of-type {
+	left: 0;
+}
+
+.slider_btn:last-of-type {
+	right: 0;
+}
+
+.before_swipper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+	flex-wrap: wrap;
+}

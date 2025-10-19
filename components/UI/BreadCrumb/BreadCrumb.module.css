@@ -1,0 +1,43 @@
+.breadcrumb_wrapper {
+	background-color: var(--gray-section);
+}
+
+.breadcrum_link {
+	margin-right: 1rem;
+}
+
+.breadcrum_span,
+.breadcrum_link {
+	color: var(--primary);
+	font-size: 12px;
+	padding: 0.5rem 0;
+	display: inline-flex;
+}
+
+.breadcrum_link:hover {
+	opacity: 0.75;
+}
+
+.breadcrum_link:first-of-type {
+	color: var(--gray);
+}
+
+.breadcrum_span::before,
+.breadcrum_link:not(:first-of-type):before {
+	content: '/';
+	margin-right: 1rem;
+}
+
+@media all and (max-width: 768px) {
+	.breadcrum_span::before,
+	.breadcrum_link:not(:first-of-type):before {
+		margin-right: 0.5rem;
+	}
+}
+
+@media all and (max-width: 576px) {
+	.breadcrum_span,
+	.breadcrum_link {
+		padding: 0.25rem 0;
+	}
+}

@@ -1,0 +1,130 @@
+.signup_outer_container {
+	position: relative;
+	background-image: linear-gradient(-90deg, #ff00a2 0%, #750cf8 50%, #4ce7f3 100%);
+	overflow: hidden;
+}
+.signup_container {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	overflow: hidden;
+}
+
+.inner_container {
+	position: relative;
+}
+
+.signup_wrapper {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	color: var(--white);
+	width: 100%;
+	max-width: 580px;
+	z-index: 10;
+	margin-left: 10rem;
+}
+.input_wrapper {
+	background-color: var(--white);
+	border-radius: 50px;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	-ms-border-radius: 50px;
+	-o-border-radius: 50px;
+	margin: 1.5rem 0;
+	padding: 0.25rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.input_wrapper input {
+	width: calc(100% - 180px);
+	padding: 0 0.5rem 0 1rem;
+}
+
+.input_wrapper button {
+	border: none;
+	color: var(--white);
+	background-image: linear-gradient(90deg, #ff03d0 0%, #4599fb 53%, #70fcff 99%);
+}
+
+.signup_img_wrapper {
+	position: absolute;
+	bottom: -10%;
+	right: 5%;
+	z-index: 1;
+}
+
+.shape_wrapper {
+	position: absolute;
+}
+
+.shape_1 {
+	top: -10%;
+	left: 15%;
+}
+
+.shape_2 {
+	right: 0px;
+	top: 50%;
+	transform: translate(0px, -50%);
+	z-index: 0;
+	-webkit-transform: translate(60px, -50%);
+	-moz-transform: translate(60px, -50%);
+	-ms-transform: translate(60px, -50%);
+	-o-transform: translate(60px, -50%);
+}
+
+.shape_3 {
+	bottom: -56.5%;
+	left: 0;
+}
+
+@media all and (max-width: 1250px) {
+	.signup_img_wrapper {
+		display: none;
+	}
+	.shape_2 {
+		display: none;
+	}
+}
+
+@media all and (max-width: 1024px) {
+	.signup_wrapper {
+		margin-left: 0;
+	}
+}
+
+@media all and (max-width: 768px) {
+	.shape_3 {
+		bottom: -65%;
+	}
+}
+
+@media all and (max-width: 576px) {
+	.input_wrapper {
+		background-color: transparent;
+		flex-direction: column;
+		padding: 0;
+		align-items: flex-start;
+	}
+
+	.input_wrapper input {
+		padding: 0.75rem;
+		width: 100%;
+		border-radius: 50px;
+		-webkit-border-radius: 50px;
+		-moz-border-radius: 50px;
+		-ms-border-radius: 50px;
+		-o-border-radius: 50px;
+	}
+
+	.input_wrapper button {
+		margin-top: 1rem;
+	}
+	.shape_3 {
+		bottom: -240px;
+	}
+}

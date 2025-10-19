@@ -1,0 +1,56 @@
+.sign_in_wrapper {
+	display: flex;
+	align-items: center;
+	width: max-content;
+	width: 100%;
+	padding: 0.5rem 1rem;
+	position: sticky;
+	top: 0;
+	z-index: 5;
+}
+
+.sign_in_wrapper span,
+.sign_in_wrapper a {
+	font-size: var(--h5);
+	margin-left: 0.5rem;
+}
+
+.sign_in_wrapper span {
+	width: 100%;
+}
+
+.sign_in_wrapper a {
+	width: 100%;
+}
+
+.sign_in_wrapper a:hover {
+	opacity: 0.75;
+}
+
+.sign_in_wrapper svg {
+	cursor: pointer;
+}
+.profile_img_wrapper {
+	position: relative;
+	min-width: 35px;
+	min-height: 35px;
+	max-width: 35px;
+	max-height: 35px;
+	padding: 2px !important;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.profile_img_wrapper img {
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+}
+
+.cls_btn:hover {
+	transform: rotate(90deg);
+}

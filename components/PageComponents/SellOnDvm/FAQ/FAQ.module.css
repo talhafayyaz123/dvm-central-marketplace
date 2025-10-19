@@ -1,0 +1,59 @@
+.heading2_wrapper,
+.heading_wrapper {
+	position: relative;
+	z-index: 2;
+}
+
+.heading_wrapper h4 {
+	margin-top: 3rem;
+}
+
+.heading_wrapper p {
+	max-width: 600px;
+}
+.answer {
+	margin: 1rem 0;
+}
+
+.faqs_wrapper {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.btn {
+	margin-top: 3rem;
+}
+
+.heading2_wrapper {
+	margin-top: 6rem;
+	border-bottom: 1px solid var(--gray-border);
+}
+
+.contact_btn {
+	margin-left: 5px;
+	font-family: 'poppins-m';
+}
+
+.contact_btn::before,
+.contact_btn::after {
+	background-color: var(--primary) !important;
+}
+
+.inquiries_wrapper {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 6rem;
+}
+
+.inquiry_card h5 {
+	margin: 1rem 0 0.75rem;
+}
+
+@media all and (max-width: 768px) {
+	.inquiries_wrapper {
+		grid-template-columns: 1fr;
+		gap: 2rem;
+	}
+}

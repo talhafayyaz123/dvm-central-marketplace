@@ -1,0 +1,38 @@
+.medical_technology {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.right_img_wrapper {
+  max-width: 550px;
+  justify-self: center;
+}
+
+.heading_wrapper {
+  position: relative;
+  line-height: 1.2;
+}
+
+.heading_wrapper h5 {
+  margin-top: 1rem;
+}
+
+.btn {
+  margin-top: 2rem;
+}
+
+.btn:hover {
+  opacity: 0.75;
+}
+
+@media all and (max-width: 768px) {
+  .medical_technology {
+    grid-template-columns: 1fr;
+  }
+  .right_img_wrapper {
+    max-width: 450px;
+  }
+}

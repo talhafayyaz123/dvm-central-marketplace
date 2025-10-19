@@ -1,0 +1,283 @@
+.sell_on_vt_hero_container {
+	display: flex;
+	position: relative;
+	z-index: 2;
+	align-items: center;
+}
+.get_start_button{
+	max-height: 70px;
+	padding: 20.5px 46px;
+}
+
+.heading_wrapper {
+	text-align: left !important;
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+	max-width: 50%;
+}
+
+.heading_wrapper h1 {
+	line-height: 1.2;
+	position: relative;
+	font-size: var(--h2);
+}
+
+.heading_wrapper h6 {
+	color: var(--lite-white);
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+	max-width: 100%;
+	margin-top: 1rem;
+}
+
+.heading_wrapper h2::after {
+	bottom: 0px;
+	background-color: #d0b4f3;
+}
+
+.heading_wrapper p {
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+	max-width: 100%;
+}
+
+.bottom_heading {
+	margin-top: 1rem !important;
+	font-family: 'poppins-m';
+	font-size: var(--h5);
+}
+
+.chance_heading {
+	margin-top: 1rem !important;
+}
+
+.img_wrapper {
+	width: calc(100% - 410px);
+	display: flex;
+	justify-content: flex-end;
+}
+
+/* //  v2 home  */
+.left_img,
+.right_img,
+.left_sml_cirlce,
+.center_sml_cirlce {
+	position: absolute;
+}
+
+.left_sml_cirlce {
+	top: 20%;
+	left: 13%;
+	width: 2rem;
+	height: 2rem;
+	background-color: var(--primary);
+}
+
+.center_sml_cirlce {
+	bottom: 25%;
+	left: 40%;
+	width: 3.5rem;
+	height: 3.5rem;
+	background-color: var(--new-lite-pink);
+}
+
+.left_img {
+	bottom: 0;
+	left: 0;
+	width: 35px;
+}
+
+.right_img {
+	top: 0;
+	right: 0;
+	width: 35px;
+}
+
+.list_wrapper li {
+	display: flex;
+	align-items: center;
+	margin-top: 0.5rem;
+	line-height: 1.5;
+}
+
+.list_wrapper li svg {
+	width: 17px;
+	margin-top: 0.1rem;
+	align-self: flex-start;
+	margin-right: 10px;
+}
+
+.video_player {
+	position: relative;
+	width: 900px;
+	max-width: 90vw;
+	height: auto;
+	padding-top: 57%;
+}
+
+.video {
+	position: absolute !important;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 15px;
+}
+
+.video_img_wrapper {
+	cursor: pointer;
+	width: 100%;
+	height: max-content;
+	position: relative;
+	overflow: hidden;
+}
+
+.video_img_wrapper span,
+.video_img_wrapper img {
+	height: 100% !important;
+	max-height: 100% !important;
+	border-radius: 15px;
+}
+
+.play_button {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+.list_wrapper span {
+	width: 88%;
+	text-align: left;
+}
+
+@media all and (max-width: 1024px) {
+	.heading_wrapper {
+		max-width: 45% !important;
+	}
+
+	.img_wrapper {
+		width: 55%;
+	}
+
+	/* home v2 */
+	.left_sml_cirlce {
+		top: 15%;
+		left: 15%;
+		width: 1.5rem;
+		height: 1.5rem;
+	}
+
+	.center_sml_cirlce {
+		bottom: 5%;
+		left: 35%;
+		width: 2.75rem;
+		height: 2.75rem;
+	}
+
+	.sell_on_vt_hero_container {
+		flex-direction: column;
+	}
+
+	.heading_wrapper {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.heading_wrapper h2 {
+		max-width: 100%;
+	}
+
+	.heading_wrapper h2::after {
+		left: 50%;
+		bottom: 0;
+		width: 50%;
+		-webkit-transform: translateX(-50%);
+		-moz-transform: translateX(-50%);
+		-ms-transform: translateX(-50%);
+		-o-transform: translateX(-50%);
+		transform: translateX(-50%);
+	}
+
+	.heading_wrapper button {
+		width: max-content;
+		margin-bottom: 3rem;
+	}
+
+	.img_wrapper {
+		width: 80%;
+	}
+
+	.heading_wrapper {
+		max-width: 80% !important;
+	}
+}
+
+@media all and (max-width: 768px) {
+	.heading_wrapper {
+		max-width: 85% !important;
+	}
+
+	/* home v2 */
+	.left_sml_cirlce {
+		top: 7.5%;
+		left: 25%;
+	}
+
+	.center_sml_cirlce {
+		bottom: initial;
+		top: 25%;
+		left: 70%;
+		width: 2.5rem;
+		height: 2.5rem;
+	}
+
+	.left_img {
+		width: 30px;
+	}
+
+	.right_img {
+		width: 30px;
+	}
+}
+
+@media all and (max-width: 576px) {
+	.img_wrapper,
+	.heading_wrapper {
+		width: 100%;
+		max-width: 100% !important;
+	}
+
+	/* home v2 */
+	.left_sml_cirlce {
+		width: 1rem;
+		height: 1rem;
+		left: 30%;
+	}
+
+	.center_sml_cirlce {
+		top: 20%;
+		width: 2rem;
+		height: 2rem;
+	}
+
+	.left_img {
+		width: 20px;
+	}
+
+	.right_img {
+		width: 20px;
+	}
+}
+
+@media all and (max-height: 600px) and (orientation: landscape) {
+	.video_player {
+		padding-top: 27.5%;
+	}
+}

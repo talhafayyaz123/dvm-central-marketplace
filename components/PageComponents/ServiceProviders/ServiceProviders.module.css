@@ -1,0 +1,12 @@
+.services_list {
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+.hr_container {
+	padding-top: 1.5rem;
+	padding-bottom: 1rem;
+	border-top: 1px solid var(--gray-border);
+}
+.read_more {
+	margin-top: 2rem;
+}

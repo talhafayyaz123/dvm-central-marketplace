@@ -1,0 +1,9 @@
+@media all and (min-width: 1251px) {
+	.mob_search_container {
+		display: none;
+	}
+}
+
+.mob_search_wrapper {
+	overflow: hidden !important;
+}

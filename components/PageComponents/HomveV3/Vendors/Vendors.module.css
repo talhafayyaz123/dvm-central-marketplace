@@ -1,0 +1,31 @@
+.slides_wrapper {
+	padding: 0 0.5rem;
+}
+
+.slide {
+	display: flex;
+	justify-content: center;
+}
+
+.swiper_btn_wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	margin-top: 1rem;
+}
+
+.swiper_btn_wrapper svg {
+	background-color: var(--primary);
+	width: 40px;
+	height: 40px;
+	border-radius: 10px;
+	padding: 0.7rem;
+	position: relative;
+	left: auto;
+	right: auto;
+	cursor: pointer;
+}
+
+.swiper_btn_wrapper svg:last-of-type {
+	margin-left: 30px;
+}

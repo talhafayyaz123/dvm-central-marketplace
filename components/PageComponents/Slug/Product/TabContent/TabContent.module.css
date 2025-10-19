@@ -1,0 +1,105 @@
+.tab_container {
+	border-bottom: 1px solid var(--gray-border);
+}
+
+.tab_headings {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	overflow: hidden;
+	width: 100%;
+	position: sticky;
+	top: 81px;
+	background-color: var(--gray-section);
+	z-index: 2;
+}
+
+.tab_headings button {
+	color: var(--black);
+}
+
+.tab_headings button {
+	border-radius: 0;
+	transition: none;
+	background-color: var(--gray-section);
+	width: max-content;
+}
+
+.tab_headings button:hover {
+	background-color: var(--new-lite-pink);
+	color: var(--black);
+}
+
+.active {
+	position: relative;
+	background-color: var(--new-lite-pink) !important;
+}
+
+.active::after {
+	content: '';
+	position: absolute;
+	bottom: -1px;
+	left: 0;
+	width: 100%;
+	height: 3px;
+	background-color: var(--primary);
+}
+
+.content {
+	margin-top: 2rem;
+}
+
+/* have question  */
+.qas_containers {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 1rem;
+}
+
+/* guides */
+.guides {
+	margin-top: 2rem;
+}
+
+.guide {
+	margin-top: 1rem;
+	width: 250px;
+	display: flex;
+	align-items: flex-start;
+}
+
+.guide svg {
+	min-width: 30px;
+	max-width: 30px;
+	margin-right: 1rem;
+}
+
+.guide .file_icon {
+	min-width: 30px;
+	max-width: 30px;
+	margin-right: 1rem;
+}
+
+.no_faq {
+	margin-top: -1.5rem;
+}
+
+@media all and (max-width: 1024px) {
+	.qas_containers {
+		grid-template-columns: 1fr;
+	}
+
+	.tab_headings {
+		justify-content: flex-start;
+	}
+
+	.no_faq {
+		margin-top: 0;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.tab_headings {
+		top: 0;
+	}
+}

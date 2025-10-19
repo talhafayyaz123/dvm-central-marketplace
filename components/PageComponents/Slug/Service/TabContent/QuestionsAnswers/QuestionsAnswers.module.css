@@ -1,0 +1,130 @@
+.question_answers_wrapper {
+	display: flex;
+	flex-direction: column;
+}
+
+.input_container {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.input_wrapper {
+	margin-top: 1rem;
+	border-radius: 7.5px;
+	padding: 0.65rem;
+	display: flex;
+	align-items: center;
+}
+
+.input_wrapper svg {
+	width: 20px;
+}
+
+.input_wrapper input {
+	width: 100%;
+	margin-left: 1rem;
+}
+
+.input_error {
+	margin-top: 0.5rem;
+	color: var(--red);
+	text-align: right;
+	font-size: 12px !important;
+}
+
+.qa_wrapper {
+	padding: 1rem;
+	margin-top: 1rem;
+	background-color: var(--gray-section);
+	border-radius: 7.5px;
+}
+
+/* .qa_wrapper:not(:last-of-type) {
+	border-bottom: 1px solid var(--gray-border);
+} */
+
+.qa_listing_wrapper {
+	position: relative;
+}
+
+.answer_input_wrapper,
+.submit_ans_wrapper,
+.a_wrapper,
+.q_wrapper {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	position: relative;
+}
+
+.qa {
+	min-width: 100px;
+	max-width: 100px;
+	align-self: flex-start;
+	margin-top: 5px;
+	font-family: 'poppins-sb';
+}
+
+.qa_loader {
+	margin-top: 0.5rem;
+	/* position: absolute;
+	top: -2.25rem;
+	left: 50%;
+	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%); */
+}
+
+.a_wrapper {
+	margin-top: 0.5rem;
+}
+
+.answer:not(:first-of-type) {
+	margin-top: 0.5rem;
+}
+
+.submit_ans_wrapper {
+	margin-top: 1rem;
+}
+
+.answ_subm_loader {
+	position: absolute;
+	right: 0;
+}
+
+.submit_ans_wrapper input {
+	width: 100%;
+	padding: 0.65rem;
+	padding-right: 1.5rem;
+	font-size: 12px;
+	padding-left: 0;
+	background-color: var(--gray-section);
+	border-bottom: 1px solid var(--gray-border);
+}
+
+.submit_ans_wrapper .qa {
+	align-self: center;
+}
+
+.reply_btn {
+	width: max-content;
+	cursor: pointer;
+	padding: 5px 10px !important;
+}
+
+.no_question {
+	color: var(--red);
+}
+
+.no_result {
+	margin-top: 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+	.question_answers_wrapper {
+		margin-top: 1.5rem;
+	}
+}

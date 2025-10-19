@@ -1,0 +1,29 @@
+.new_arrivals_wrapper {
+	display: grid;
+	grid-template-columns: 1fr;
+	column-gap: 1rem;
+	row-gap: 2rem;
+}
+
+.new_arrivals_wrapper,
+.new_arrivals_heading {
+	margin-top: 1rem;
+}
+
+@media all and (max-width: 1024px) {
+	.new_arrivals_wrapper {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media all and (max-width: 768px) {
+	.new_arrivals_wrapper {
+		gap: 1rem;
+	}
+}
+
+@media all and (max-width: 576px) {
+	.new_arrivals_wrapper {
+		grid-template-columns: 1fr;
+	}
+}

@@ -1,0 +1,37 @@
+.info_section_container {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+.info_section_wrapper {
+	color: var(--lite-white);
+	position: sticky;
+	top: 130px;
+	left: 0;
+	height: max-content;
+}
+
+.title {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 0.5rem;
+}
+
+.wrapper {
+	display: flex;
+	align-items: center;
+	margin-top: 0.75rem;
+}
+
+.wrapper svg {
+	margin-right: 1rem;
+	min-width: 15px;
+	max-width: 15px;
+}
+
+.social_links_wrapper {
+	margin-top: 2rem;
+	justify-content: flex-start !important;
+}
